@@ -1,0 +1,6 @@
+framework module Pods_DibnerLibraryApp {
+  umbrella header "Pods-DibnerLibraryApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
