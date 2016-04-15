@@ -28,6 +28,9 @@ let ref = Firebase(url: "https://dibnerlibraryapp.firebaseio.com")
 let GREEN = 0x7ACE18
 let BLUE = 0xB6D9FF
 
+var DAY:String!
+var MONTH:String!
+
 extension UIColor {
     convenience init(red: Int, green: Int, blue: Int) {
         assert(red >= 0 && red <= 255, "Invalid red component")

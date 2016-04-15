@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'DBA4C12C0A6CC830DFE04C77'
-               BlueprintName = 'Pods-DibnerLibraryApp'
+               BlueprintIdentifier = '44CBA1DBD24294DCBA555760'
+               BlueprintName = 'DropDown'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods_DibnerLibraryApp.framework'>
+               BuildableName = 'DropDown.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

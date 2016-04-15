@@ -502,31 +502,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="tfm-k0-gMs">
-                                <rect key="frame" x="16" y="70" width="288" height="100"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="KCb-Tg-cTZ">
+                                <rect key="frame" x="16" y="70" width="288" height="30"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Room Number or Laptop Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jax-rw-Wa5">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="30"/>
-                                        <color key="textColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cMf-HJ-jmp">
-                                        <rect key="frame" x="0.0" y="35" width="288" height="30"/>
-                                        <color key="textColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How many people(Optional)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1ZU-Hy-rxc">
-                                        <rect key="frame" x="0.0" y="70" width="288" height="30"/>
-                                        <color key="textColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cp4-H5-n9z">
+                                        <rect key="frame" x="0.0" y="0.0" width="83" height="30"/>
+                                        <color key="backgroundColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                        <state key="normal" title="Day">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onDropDownBtnPressed:" destination="Iug-Ys-gT6" eventType="touchUpInside" id="vt6-ZP-7hu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCX-nt-I3F">
+                                        <rect key="frame" x="103" y="0.0" width="83" height="30"/>
+                                        <color key="backgroundColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                        <state key="normal" title="Hour">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onHourBtnPressed:" destination="Iug-Ys-gT6" eventType="touchUpInside" id="NBg-q1-55e"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3R4-cJ-M0o">
+                                        <rect key="frame" x="206" y="0.0" width="83" height="30"/>
+                                        <color key="backgroundColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                        <state key="normal" title="Minute">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onMinBtnPressed:" destination="Iug-Ys-gT6" eventType="touchUpInside" id="bGd-sk-SfF"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="srq-LW-8kk">
-                                <rect key="frame" x="16" y="270" width="288" height="70"/>
+                                <rect key="frame" x="16" y="430" width="288" height="70"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HkV-if-mbp">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="30"/>
@@ -550,15 +565,26 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Room Number or Laptop Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jax-rw-Wa5">
+                                <rect key="frame" x="16" y="108" width="288" height="30"/>
+                                <color key="textColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="tfm-k0-gMs" firstAttribute="leading" secondItem="zlf-4i-2IM" secondAttribute="leadingMargin" id="74T-A2-a4L"/>
-                            <constraint firstItem="srq-LW-8kk" firstAttribute="top" secondItem="tfm-k0-gMs" secondAttribute="bottom" constant="100" id="dSJ-9g-xkQ"/>
+                            <constraint firstItem="jax-rw-Wa5" firstAttribute="top" secondItem="KCb-Tg-cTZ" secondAttribute="bottom" constant="8" id="09o-mh-p7C"/>
+                            <constraint firstItem="iyg-GS-4Fb" firstAttribute="top" secondItem="srq-LW-8kk" secondAttribute="bottom" constant="24" id="1L3-fi-Mi6"/>
+                            <constraint firstItem="srq-LW-8kk" firstAttribute="trailing" secondItem="zlf-4i-2IM" secondAttribute="trailingMargin" id="89T-yr-C3r"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jax-rw-Wa5" secondAttribute="trailing" id="9OJ-HF-a68"/>
+                            <constraint firstItem="KCb-Tg-cTZ" firstAttribute="top" secondItem="hAo-NX-Vm2" secondAttribute="bottom" constant="50" id="MlH-F3-KgT"/>
+                            <constraint firstItem="srq-LW-8kk" firstAttribute="leading" secondItem="zlf-4i-2IM" secondAttribute="leadingMargin" id="ORP-QO-FhC"/>
+                            <constraint firstItem="KCb-Tg-cTZ" firstAttribute="leading" secondItem="zlf-4i-2IM" secondAttribute="leadingMargin" id="aQ2-O1-d3I"/>
+                            <constraint firstItem="jax-rw-Wa5" firstAttribute="leading" secondItem="zlf-4i-2IM" secondAttribute="leadingMargin" id="eRt-Dm-jfG"/>
                             <constraint firstItem="srq-LW-8kk" firstAttribute="leading" secondItem="zlf-4i-2IM" secondAttribute="leadingMargin" id="hOy-aF-f2U"/>
                             <constraint firstAttribute="trailingMargin" secondItem="srq-LW-8kk" secondAttribute="trailing" id="lQG-51-soO"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="tfm-k0-gMs" secondAttribute="trailing" id="q2e-oU-U5P"/>
-                            <constraint firstItem="tfm-k0-gMs" firstAttribute="top" secondItem="hAo-NX-Vm2" secondAttribute="bottom" constant="50" id="u0V-XV-MEo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KCb-Tg-cTZ" secondAttribute="trailing" id="ui6-jR-qvn"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -572,6 +598,9 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="dateBtn" destination="cp4-H5-n9z" id="dDi-8j-CGd"/>
+                        <outlet property="hourBtn" destination="WCX-nt-I3F" id="Hgc-wa-yTN"/>
+                        <outlet property="minBtn" destination="3R4-cJ-M0o" id="3tv-b9-XEg"/>
                         <outlet property="roomNumber" destination="jax-rw-Wa5" id="uw2-MQ-kwX"/>
                     </connections>
                 </viewController>

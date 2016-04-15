@@ -1,10 +1,13 @@
 PODS:
+  - DropDown (0.1.5)
   - Firebase (2.5.0)
 
 DEPENDENCIES:
+  - DropDown (~> 0.1)
   - Firebase (>= 2.5.0)
 
 SPEC CHECKSUMS:
+  DropDown: addffd49f2a014e079ed854adcb3c5473c1ebdf2
   Firebase: 744617c0733b45198f9486ebd5cac64ec2d10d79
 
 COCOAPODS: 0.39.0

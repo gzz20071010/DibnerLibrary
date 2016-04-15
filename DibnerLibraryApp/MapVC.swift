@@ -42,30 +42,6 @@ class MapVC: UIViewController {
         }
         // Do any additional setup after loading the view.
         
-        DataService.ds.REF_MAP.observeEventType(.Value, withBlock:{snapshot in
-            self.libraryStatus = Dictionary<String, AnyObject>()
-            
-            if let snapshots = snapshot.children.allObjects as? [FDataSnapshot]{
-                for snap in snapshots{
-                    // print("SNAP: \(snap)")
-                    // print("snap value: \(snap.value)")
-                    let key = snap.key as String
-                    let value = snap.value
-                    // print(key)
-                    // print("hi")
-                    // print(value)
-                    self.libraryStatus["\(key)"] = value
-                    self.updateMap()
-                    
-                }
-                
-                print(self.libraryStatus)
-                self.updateMap()
-                
-            }
-        })
-   // updateMap()
-        
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -75,22 +51,17 @@ class MapVC: UIViewController {
             
             if let snapshots = snapshot.children.allObjects as? [FDataSnapshot]{
                 for snap in snapshots{
-                    // print("SNAP: \(snap)")
-                    // print("snap value: \(snap.value)")
+               
                     let key = snap.key as String
                     let value = snap.value
-                    // print(key)
-                    // print("hi")
-                    // print(value)
+             
                     self.libraryStatus["\(key)"] = value
-                    self.updateMap()
-
                 }
                 
-                print(self.libraryStatus)
-                self.updateMap()
                 
             }
+            self.updateMap()
+
         })
 
     }
@@ -179,7 +150,7 @@ class MapVC: UIViewController {
         }else if libraryStatus["410"] as! Bool == false {
             room410.backgroundColor = UIColor(netHex: Int(BLUE))
         }
-
+  
         
     }
 

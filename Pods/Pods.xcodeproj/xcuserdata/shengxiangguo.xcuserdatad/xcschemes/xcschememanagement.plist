@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>DropDown.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Firebase.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,7 +22,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>91D64D8A20BB52ABA72C49755E87F7A4</key>
+		<key>62079402A74E5DA1F7087D4D61109A3A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>67D807208F62081EBD013D6EDE715B9B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

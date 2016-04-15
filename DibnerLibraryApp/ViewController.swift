@@ -16,6 +16,20 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        //get current date
+        let calendar = NSCalendar.currentCalendar()
+        let currentDate = NSDate()
+        let dateComponents = calendar.components([NSCalendarUnit.Day, NSCalendarUnit.Month, NSCalendarUnit.Year, NSCalendarUnit.WeekOfYear, NSCalendarUnit.Hour, NSCalendarUnit.Minute, NSCalendarUnit.Second, NSCalendarUnit.Nanosecond], fromDate: currentDate)
+        
+        DAY = "\(dateComponents.day)"
+        MONTH = "\(dateComponents.month)"
+        
+        //print("day = \(dateComponents.day)")
+        //print("month = \(dateComponents.month)")
+        //print(DAY)
+
     }
     
     //ref.authUser("bobtony@example.com", password: "correcthorsebatterystaple",
@@ -46,8 +60,8 @@ class ViewController: UIViewController {
                 // Authentication just completed successfully :)
                 
                 // The logged in user's unique identifier
-                print(authData.uid)
-                print(authData.provider)
+                //  print(authData.uid)
+                //  print(authData.provider)
                 //print(authData.providerData["dispalyName"])
                 
                 

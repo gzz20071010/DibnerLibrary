@@ -84,8 +84,10 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-DibnerLibraryApp/DropDown.framework"
   install_framework "Pods-DibnerLibraryApp/Firebase.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-DibnerLibraryApp/DropDown.framework"
   install_framework "Pods-DibnerLibraryApp/Firebase.framework"
 fi

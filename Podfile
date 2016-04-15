@@ -5,5 +5,7 @@ use_frameworks!
 
 target ‘DibnerLibraryApp’ do
 pod 'Firebase', '>= 2.5.0'
+pod 'DropDown', '~> 0.1'
+
 end
 
