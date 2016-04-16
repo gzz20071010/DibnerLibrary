@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import Foundation
 import Firebase
 import DropDown
 
-class AddPlantVC: UIViewController {
+class AddPlantVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var roomNumber: UITextField!
     @IBOutlet weak var dateBtn: UIButton!
@@ -21,6 +22,7 @@ class AddPlantVC: UIViewController {
     @IBOutlet weak var hrBtn2: UIButton!
     @IBOutlet weak var minBtn2: UIButton!
     
+    @IBOutlet weak var tableView: UITableView!
     
     let dropDown = DropDown()
     let dropDown2 = DropDown()
@@ -31,6 +33,9 @@ class AddPlantVC: UIViewController {
     
     var rooms = [Room]()
 
+    var availiableRooms = [Room]()
+    
+    var selectDate = [Date]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +48,8 @@ class AddPlantVC: UIViewController {
         ]
         
         dropDown4.dataSource = dropDown.dataSource
-        
+        self.tableView.dataSource  = self
+        self.tableView.delegate = self
         
         //hr datasource
         dropDown2.dataSource = [
@@ -79,6 +85,7 @@ class AddPlantVC: UIViewController {
         
         dropDown2.selectionAction = { [unowned self] (index, item) in
             self.hourBtn.setTitle(item, forState: .Normal)
+
         }
         
         dropDown3.selectionAction = { [unowned self] (index, item) in
@@ -154,14 +161,31 @@ class AddPlantVC: UIViewController {
                    // self.reservations.append("\(snap.key)")
                 }
                 //print("====")
-                //print(rooms.count)
+                print(self.rooms.count)
                 //print("self.reservation: ", self.reservations)
             
              
             }
         })
-        
 
+
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return availiableRooms.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCellWithIdentifier("RoomCell", forIndexPath: indexPath) as? RoomCell{
+            let room = availiableRooms[indexPath.row]
+            cell.roomNumbLb.text = "\(room.roomNumber)"
+            return cell
+        }
+        return UITableViewCell()
+    }
+ 
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
     }
 
     @IBAction func onDropDownBtnPressed(sender: AnyObject) {
@@ -212,6 +236,46 @@ class AddPlantVC: UIViewController {
         }
     }
     
+    @IBAction func onCheckBtnPressed(sender: AnyObject) {
+        let beginTime = "\(dateBtn.titleLabel!.text!)\(hourBtn.titleLabel!.text!)\(minBtn2.titleLabel!.text!)"
+        let endTime = "\(dateBtn2.titleLabel!.text!)\(hrBtn2.titleLabel!.text!)\(minBtn2.titleLabel!.text!)"
+        let beginDate = parseDate(beginTime)
+        let endDate = parseDate(endTime)
+        let userSelectedBeginDate = Date(arr: beginDate)
+        let userSelectedEndDate = Date(arr: endDate)
+        selectDate.append(userSelectedBeginDate)
+        selectDate.append(userSelectedEndDate)
+        
+        availiableRooms = [Room]()
+        //var unavalibleRooms = rooms
+        
+        for room in self.rooms{
+            var flag = true
+            for (index, element) in (room.reservations.enumerate()) {
+                if index%2 == 0{
+                    if element.day == userSelectedBeginDate.day{
+                        if element.hr <= userSelectedBeginDate.hr{
+                            if room.reservations[index+1].hr > userSelectedBeginDate.hr{
+                                flag = false
+                            }
+                        }
+                        else if element.hr > userSelectedBeginDate.hr {
+                            if element.hr < userSelectedEndDate.hr{
+                                flag = false
+                            }
+                        }
+                    }
+                }
+            }
+            if flag {
+                availiableRooms.append(room)
+            }
+
+        }
+        print(availiableRooms)
+        self.tableView.reloadData()
+        
+    }
     
     @IBAction func onAddPressed(sender: AnyObject) {
         //let value = ["\(roomNumber.text!)" : true]
