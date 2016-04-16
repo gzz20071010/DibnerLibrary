@@ -23,6 +23,8 @@
 		179855501C6DC8C400DD523F /* SideThreeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1798554F1C6DC8C400DD523F /* SideThreeVC.swift */; };
 		179855561C6DD28500DD523F /* AddPlantVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179855551C6DD28500DD523F /* AddPlantVC.swift */; };
 		179A8BFB1CA3117200A381C0 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179A8BFA1CA3117200A381C0 /* MapVC.swift */; };
+		17DAA5761CC1AC7E005589EE /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DAA5751CC1AC7E005589EE /* Room.swift */; };
+		17DAA5781CC1AC9B005589EE /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DAA5771CC1AC9B005589EE /* Date.swift */; };
 		4F72FA3BB5BEBE63DB920A22 /* Pods_DibnerLibraryApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FABAE4284809D0D137A06B19 /* Pods_DibnerLibraryApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +50,8 @@
 		1798554F1C6DC8C400DD523F /* SideThreeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideThreeVC.swift; sourceTree = "<group>"; };
 		179855551C6DD28500DD523F /* AddPlantVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlantVC.swift; sourceTree = "<group>"; };
 		179A8BFA1CA3117200A381C0 /* MapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		17DAA5751CC1AC7E005589EE /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		17DAA5771CC1AC9B005589EE /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		4234F1B95E4FCF8917CE7787 /* Pods-DibnerLibraryApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DibnerLibraryApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-DibnerLibraryApp/Pods-DibnerLibraryApp.release.xcconfig"; sourceTree = "<group>"; };
 		ACC622349E50C40598E7DE49 /* Pods-DibnerLibraryApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DibnerLibraryApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DibnerLibraryApp/Pods-DibnerLibraryApp.debug.xcconfig"; sourceTree = "<group>"; };
 		FABAE4284809D0D137A06B19 /* Pods_DibnerLibraryApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DibnerLibraryApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +107,8 @@
 		179855511C6DCB0700DD523F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				17DAA5751CC1AC7E005589EE /* Room.swift */,
+				17DAA5771CC1AC9B005589EE /* Date.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -282,7 +288,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				179855501C6DC8C400DD523F /* SideThreeVC.swift in Sources */,
+				17DAA5781CC1AC9B005589EE /* Date.swift in Sources */,
 				1790E19D1C6C4D1A009231A8 /* HomeVC.swift in Sources */,
+				17DAA5761CC1AC7E005589EE /* Room.swift in Sources */,
 				1790E18D1C6C4C5B009231A8 /* ViewController.swift in Sources */,
 				1768619B1CB2D9A8006145EA /* DataService.swift in Sources */,
 				1768619D1CB2F7BE006145EA /* reservationCell.swift in Sources */,

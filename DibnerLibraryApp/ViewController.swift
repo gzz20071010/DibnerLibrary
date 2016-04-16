@@ -23,12 +23,14 @@ class ViewController: UIViewController {
         let currentDate = NSDate()
         let dateComponents = calendar.components([NSCalendarUnit.Day, NSCalendarUnit.Month, NSCalendarUnit.Year, NSCalendarUnit.WeekOfYear, NSCalendarUnit.Hour, NSCalendarUnit.Minute, NSCalendarUnit.Second, NSCalendarUnit.Nanosecond], fromDate: currentDate)
         
-        DAY = "\(dateComponents.day)"
+        DAY = dateComponents.day
         MONTH = "\(dateComponents.month)"
         
         //print("day = \(dateComponents.day)")
         //print("month = \(dateComponents.month)")
         //print(DAY)
+        
+        //parseDate("123456")
 
     }
     

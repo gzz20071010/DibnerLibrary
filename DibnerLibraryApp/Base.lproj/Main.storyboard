@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fWk-cD-7bT">
-                                <rect key="frame" x="16" y="95" width="288" height="162"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fWk-cD-7bT">
+                                <rect key="frame" x="16" y="95" width="288" height="242"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DibnerLibraryApp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zw7-iC-XeU">
                                         <rect key="frame" x="9" y="0.0" width="270" height="42"/>
@@ -26,24 +26,24 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="691-zI-tph">
-                                        <rect key="frame" x="44" y="42" width="200" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="691-zI-tph">
+                                        <rect key="frame" x="44" y="62" width="200" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="gho-Df-oFh"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ohW-YR-V0M">
-                                        <rect key="frame" x="44" y="72" width="200" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ohW-YR-V0M">
+                                        <rect key="frame" x="44" y="112" width="200" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="S8g-SY-Odb"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owz-U6-2Rw">
-                                        <rect key="frame" x="109" y="102" width="70" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owz-U6-2Rw">
+                                        <rect key="frame" x="109" y="162" width="70" height="30"/>
                                         <state key="normal" title="Sign in">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -51,8 +51,8 @@
                                             <action selector="signinBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WoW-Wz-r8n"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmO-1Z-CsO">
-                                        <rect key="frame" x="109" y="132" width="70" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmO-1Z-CsO">
+                                        <rect key="frame" x="109" y="212" width="70" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="70" id="xYb-jg-Vev"/>
                                         </constraints>
@@ -505,8 +505,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="KCb-Tg-cTZ">
                                 <rect key="frame" x="16" y="70" width="288" height="30"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Begin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yH8-4S-xP8">
+                                        <rect key="frame" x="0.0" y="0.0" width="57" height="30"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cp4-H5-n9z">
-                                        <rect key="frame" x="0.0" y="0.0" width="83" height="30"/>
+                                        <rect key="frame" x="77" y="0.0" width="57" height="30"/>
                                         <color key="backgroundColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <state key="normal" title="Day">
@@ -517,7 +523,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCX-nt-I3F">
-                                        <rect key="frame" x="103" y="0.0" width="83" height="30"/>
+                                        <rect key="frame" x="154" y="0.0" width="57" height="30"/>
                                         <color key="backgroundColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <state key="normal" title="Hour">
@@ -528,7 +534,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3R4-cJ-M0o">
-                                        <rect key="frame" x="206" y="0.0" width="83" height="30"/>
+                                        <rect key="frame" x="231" y="0.0" width="57" height="30"/>
                                         <color key="backgroundColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <state key="normal" title="Minute">
@@ -565,8 +571,60 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Room Number or Laptop Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jax-rw-Wa5">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="P7o-Zi-f8g">
                                 <rect key="frame" x="16" y="108" width="288" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlV-pj-3qg">
+                                        <rect key="frame" x="0.0" y="0.0" width="57" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i5v-C5-81k">
+                                        <rect key="frame" x="77" y="0.0" width="57" height="30"/>
+                                        <color key="backgroundColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="57" id="19o-oc-wTg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                        <state key="normal" title="Day">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="19o-oc-wTg"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="onDate2Pressed:" destination="Iug-Ys-gT6" eventType="touchUpInside" id="HBP-yN-EmQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AgQ-5l-es6">
+                                        <rect key="frame" x="154" y="0.0" width="57" height="30"/>
+                                        <color key="backgroundColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                        <state key="normal" title="Hour">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onHr2Pressed:" destination="Iug-Ys-gT6" eventType="touchUpInside" id="h8H-nO-xVV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CjM-X1-AW5">
+                                        <rect key="frame" x="231" y="0.0" width="57" height="30"/>
+                                        <color key="backgroundColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                        <state key="normal" title="Minute">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onMin2Pressed:" destination="Iug-Ys-gT6" eventType="touchUpInside" id="kd4-sn-N30"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Room Number or Laptop Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jax-rw-Wa5">
+                                <rect key="frame" x="16" y="146" width="288" height="30"/>
                                 <color key="textColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -574,15 +632,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="jax-rw-Wa5" firstAttribute="top" secondItem="KCb-Tg-cTZ" secondAttribute="bottom" constant="8" id="09o-mh-p7C"/>
                             <constraint firstItem="iyg-GS-4Fb" firstAttribute="top" secondItem="srq-LW-8kk" secondAttribute="bottom" constant="24" id="1L3-fi-Mi6"/>
                             <constraint firstItem="srq-LW-8kk" firstAttribute="trailing" secondItem="zlf-4i-2IM" secondAttribute="trailingMargin" id="89T-yr-C3r"/>
                             <constraint firstAttribute="trailingMargin" secondItem="jax-rw-Wa5" secondAttribute="trailing" id="9OJ-HF-a68"/>
+                            <constraint firstItem="P7o-Zi-f8g" firstAttribute="leading" secondItem="zlf-4i-2IM" secondAttribute="leadingMargin" id="DhI-Qb-9al"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="P7o-Zi-f8g" secondAttribute="trailing" id="Exr-aj-pj7"/>
                             <constraint firstItem="KCb-Tg-cTZ" firstAttribute="top" secondItem="hAo-NX-Vm2" secondAttribute="bottom" constant="50" id="MlH-F3-KgT"/>
                             <constraint firstItem="srq-LW-8kk" firstAttribute="leading" secondItem="zlf-4i-2IM" secondAttribute="leadingMargin" id="ORP-QO-FhC"/>
                             <constraint firstItem="KCb-Tg-cTZ" firstAttribute="leading" secondItem="zlf-4i-2IM" secondAttribute="leadingMargin" id="aQ2-O1-d3I"/>
                             <constraint firstItem="jax-rw-Wa5" firstAttribute="leading" secondItem="zlf-4i-2IM" secondAttribute="leadingMargin" id="eRt-Dm-jfG"/>
+                            <constraint firstItem="P7o-Zi-f8g" firstAttribute="top" secondItem="KCb-Tg-cTZ" secondAttribute="bottom" constant="8" id="ekZ-g2-vAe"/>
                             <constraint firstItem="srq-LW-8kk" firstAttribute="leading" secondItem="zlf-4i-2IM" secondAttribute="leadingMargin" id="hOy-aF-f2U"/>
+                            <constraint firstItem="jax-rw-Wa5" firstAttribute="top" secondItem="P7o-Zi-f8g" secondAttribute="bottom" constant="8" id="l2P-oZ-4oO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="srq-LW-8kk" secondAttribute="trailing" id="lQG-51-soO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="KCb-Tg-cTZ" secondAttribute="trailing" id="ui6-jR-qvn"/>
                         </constraints>
@@ -599,14 +660,17 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="dateBtn" destination="cp4-H5-n9z" id="dDi-8j-CGd"/>
+                        <outlet property="dateBtn2" destination="i5v-C5-81k" id="Hxn-HL-H9B"/>
                         <outlet property="hourBtn" destination="WCX-nt-I3F" id="Hgc-wa-yTN"/>
+                        <outlet property="hrBtn2" destination="AgQ-5l-es6" id="HUs-gD-biz"/>
                         <outlet property="minBtn" destination="3R4-cJ-M0o" id="3tv-b9-XEg"/>
+                        <outlet property="minBtn2" destination="CjM-X1-AW5" id="fUM-9J-YWy"/>
                         <outlet property="roomNumber" destination="jax-rw-Wa5" id="uw2-MQ-kwX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ao5-pK-Cet" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2390" y="-1379"/>
+            <point key="canvasLocation" x="2338" y="-1389"/>
         </scene>
         <!--Side ThreeVC-->
         <scene sceneID="6CE-Xj-Apn">
