@@ -29,10 +29,10 @@ class ViewController: UIViewController {
         HR = dateComponents.hour
         //print("day = \(dateComponents.day)")
         //print("month = \(dateComponents.month)")
-        print(DAY)
-        print(HR)
-        print(MIN)
-        
+//        print(DAY)
+//        print(HR)
+//        print(MIN)
+//        
         
         //parseDate("123456")
 

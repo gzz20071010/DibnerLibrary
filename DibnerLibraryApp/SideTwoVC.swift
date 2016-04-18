@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class SideTwoVC: UIViewController {
 
@@ -22,5 +23,9 @@ class SideTwoVC: UIViewController {
         }
     }
 
+    @IBAction func onLogOutPressed(sender: AnyObject) {
+        ref.unauth()
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 
 }
