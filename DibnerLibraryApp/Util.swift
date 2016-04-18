@@ -30,6 +30,8 @@ let BLUE = 0xB6D9FF
 
 var DAY:Int!
 var MONTH:String!
+var MIN:Int!
+var HR:Int!
 
 extension UIColor {
     convenience init(red: Int, green: Int, blue: Int) {

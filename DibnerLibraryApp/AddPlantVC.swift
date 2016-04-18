@@ -141,10 +141,10 @@ class AddPlantVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                     //print("\(snap.key)")
                     var dates = [Date]()
                     if let value = snap.value as? Dictionary<String, String>{
-                        print(value)
+                        //print(value)
                         for (key, value) in value {
-                            print(key)
-                            print(value)
+                          //  print(key)
+                          //  print(value)
                             let beginDate = parseDate(key)
                             let endDate = parseDate(value)
                             let beginD = Date(arr:beginDate)
@@ -161,7 +161,7 @@ class AddPlantVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                    // self.reservations.append("\(snap.key)")
                 }
                 //print("====")
-                print(self.rooms.count)
+                //print(self.rooms.count)
                 //print("self.reservation: ", self.reservations)
             
              
@@ -272,7 +272,7 @@ class AddPlantVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
             }
 
         }
-        print(availiableRooms)
+        //print(availiableRooms)
         self.tableView.reloadData()
         
     }
