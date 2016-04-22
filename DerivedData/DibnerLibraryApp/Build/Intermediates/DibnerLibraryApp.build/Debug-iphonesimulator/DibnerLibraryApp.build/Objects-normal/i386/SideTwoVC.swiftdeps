@@ -1,0 +1,366 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SideTwoVC"
+provides-nominal:
+- "C16DibnerLibraryApp9SideTwoVC"
+provides-member:
+- ["C16DibnerLibraryApp9SideTwoVC", ""]
+provides-dynamic-lookup:
+- "onLogOutPressed"
+- "menuButton"
+- "viewDidLoad"
+depends-top-level:
+- !private "ref"
+- !private "StringLiteralType"
+- "UIViewController"
+- "AnyObject"
+- !private "!="
+- "UIBarButtonItem"
+- "SideTwoVC"
+- !private "BooleanLiteralType"
+depends-member:
+- !private ["Ps9AnyObject", "action"]
+- !private ["Ps9AnyObject", "addGestureRecognizer"]
+- !private ["Ps9AnyObject", "dismissViewControllerAnimated"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "menuButton"]
+- ["Ps9AnyObject", "onLogOutPressed"]
+- !private ["Ps9AnyObject", "panGestureRecognizer"]
+- !private ["Ps9AnyObject", "ref"]
+- !private ["Ps9AnyObject", "revealToggle"]
+- !private ["Ps9AnyObject", "revealViewController"]
+- !private ["Ps9AnyObject", "target"]
+- !private ["Ps9AnyObject", "unauth"]
+- !private ["Ps9AnyObject", "view"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["Ps11CVarArgType", "action"]
+- !private ["Ps11CVarArgType", "addGestureRecognizer"]
+- !private ["Ps11CVarArgType", "dismissViewControllerAnimated"]
+- ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", "menuButton"]
+- ["Ps11CVarArgType", "onLogOutPressed"]
+- !private ["Ps11CVarArgType", "panGestureRecognizer"]
+- !private ["Ps11CVarArgType", "ref"]
+- !private ["Ps11CVarArgType", "revealToggle"]
+- !private ["Ps11CVarArgType", "revealViewController"]
+- !private ["Ps11CVarArgType", "target"]
+- !private ["Ps11CVarArgType", "unauth"]
+- !private ["Ps11CVarArgType", "view"]
+- ["Ps11CVarArgType", "viewDidLoad"]
+- ["Ps11CVarArgType", ""]
+- !private ["Ps28CustomDebugStringConvertible", "action"]
+- !private ["Ps28CustomDebugStringConvertible", "addGestureRecognizer"]
+- !private ["Ps28CustomDebugStringConvertible", "dismissViewControllerAnimated"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "menuButton"]
+- ["Ps28CustomDebugStringConvertible", "onLogOutPressed"]
+- !private ["Ps28CustomDebugStringConvertible", "panGestureRecognizer"]
+- !private ["Ps28CustomDebugStringConvertible", "ref"]
+- !private ["Ps28CustomDebugStringConvertible", "revealToggle"]
+- !private ["Ps28CustomDebugStringConvertible", "revealViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "target"]
+- !private ["Ps28CustomDebugStringConvertible", "unauth"]
+- !private ["Ps28CustomDebugStringConvertible", "view"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "action"]
+- !private ["Ps23CustomStringConvertible", "addGestureRecognizer"]
+- !private ["Ps23CustomStringConvertible", "dismissViewControllerAnimated"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "menuButton"]
+- ["Ps23CustomStringConvertible", "onLogOutPressed"]
+- !private ["Ps23CustomStringConvertible", "panGestureRecognizer"]
+- !private ["Ps23CustomStringConvertible", "ref"]
+- !private ["Ps23CustomStringConvertible", "revealToggle"]
+- !private ["Ps23CustomStringConvertible", "revealViewController"]
+- !private ["Ps23CustomStringConvertible", "target"]
+- !private ["Ps23CustomStringConvertible", "unauth"]
+- !private ["Ps23CustomStringConvertible", "view"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "action"]
+- !private ["Ps9Equatable", "addGestureRecognizer"]
+- !private ["Ps9Equatable", "dismissViewControllerAnimated"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "menuButton"]
+- ["Ps9Equatable", "onLogOutPressed"]
+- !private ["Ps9Equatable", "panGestureRecognizer"]
+- !private ["Ps9Equatable", "ref"]
+- !private ["Ps9Equatable", "revealToggle"]
+- !private ["Ps9Equatable", "revealViewController"]
+- !private ["Ps9Equatable", "target"]
+- !private ["Ps9Equatable", "unauth"]
+- !private ["Ps9Equatable", "view"]
+- ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- !private ["CSo6FQuery", "unauth"]
+- !private ["CSo8Firebase", "unauth"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "action"]
+- !private ["Ps8Hashable", "addGestureRecognizer"]
+- !private ["Ps8Hashable", "dismissViewControllerAnimated"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "menuButton"]
+- ["Ps8Hashable", "onLogOutPressed"]
+- !private ["Ps8Hashable", "panGestureRecognizer"]
+- !private ["Ps8Hashable", "ref"]
+- !private ["Ps8Hashable", "revealToggle"]
+- !private ["Ps8Hashable", "revealViewController"]
+- !private ["Ps8Hashable", "target"]
+- !private ["Ps8Hashable", "unauth"]
+- !private ["Ps8Hashable", "view"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- !private ["SQ", "deinit"]
+- !private ["PSo8NSCoding", "action"]
+- !private ["PSo8NSCoding", "addGestureRecognizer"]
+- !private ["PSo8NSCoding", "dismissViewControllerAnimated"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "menuButton"]
+- ["PSo8NSCoding", "onLogOutPressed"]
+- !private ["PSo8NSCoding", "panGestureRecognizer"]
+- !private ["PSo8NSCoding", "ref"]
+- !private ["PSo8NSCoding", "revealToggle"]
+- !private ["PSo8NSCoding", "revealViewController"]
+- !private ["PSo8NSCoding", "target"]
+- !private ["PSo8NSCoding", "view"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo26NSExtensionRequestHandling", "dismissViewControllerAnimated"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "menuButton"]
+- ["PSo26NSExtensionRequestHandling", "onLogOutPressed"]
+- !private ["PSo26NSExtensionRequestHandling", "panGestureRecognizer"]
+- !private ["PSo26NSExtensionRequestHandling", "ref"]
+- !private ["PSo26NSExtensionRequestHandling", "revealToggle"]
+- !private ["PSo26NSExtensionRequestHandling", "revealViewController"]
+- !private ["PSo26NSExtensionRequestHandling", "view"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- ["CSo8NSObject", "AnyObject"]
+- ["CSo8NSObject", "UIBarButtonItem"]
+- !private ["CSo8NSObject", "action"]
+- !private ["CSo8NSObject", "addGestureRecognizer"]
+- !private ["CSo8NSObject", "deinit"]
+- !private ["CSo8NSObject", "dismissViewControllerAnimated"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "menuButton"]
+- ["CSo8NSObject", "onLogOutPressed"]
+- !private ["CSo8NSObject", "panGestureRecognizer"]
+- !private ["CSo8NSObject", "ref"]
+- !private ["CSo8NSObject", "revealToggle"]
+- !private ["CSo8NSObject", "revealViewController"]
+- !private ["CSo8NSObject", "target"]
+- !private ["CSo8NSObject", "unauth"]
+- !private ["CSo8NSObject", "view"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "action"]
+- !private ["PSo16NSObjectProtocol", "addGestureRecognizer"]
+- !private ["PSo16NSObjectProtocol", "dismissViewControllerAnimated"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "menuButton"]
+- ["PSo16NSObjectProtocol", "onLogOutPressed"]
+- !private ["PSo16NSObjectProtocol", "panGestureRecognizer"]
+- !private ["PSo16NSObjectProtocol", "ref"]
+- !private ["PSo16NSObjectProtocol", "revealToggle"]
+- !private ["PSo16NSObjectProtocol", "revealViewController"]
+- !private ["PSo16NSObjectProtocol", "target"]
+- !private ["PSo16NSObjectProtocol", "unauth"]
+- !private ["PSo16NSObjectProtocol", "view"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["Sq", "deinit"]
+- !private ["CSo22SWRevealViewController", "deinit"]
+- !private ["CSo22SWRevealViewController", "panGestureRecognizer"]
+- !private ["CSo22SWRevealViewController", "revealToggle"]
+- !private ["V10ObjectiveC8Selector", "deinit"]
+- ["C16DibnerLibraryApp9SideTwoVC", "AnyObject"]
+- ["C16DibnerLibraryApp9SideTwoVC", "UIBarButtonItem"]
+- ["C16DibnerLibraryApp9SideTwoVC", "deinit"]
+- !private ["C16DibnerLibraryApp9SideTwoVC", "dismissViewControllerAnimated"]
+- ["C16DibnerLibraryApp9SideTwoVC", "init"]
+- ["C16DibnerLibraryApp9SideTwoVC", "menuButton"]
+- ["C16DibnerLibraryApp9SideTwoVC", "onLogOutPressed"]
+- !private ["C16DibnerLibraryApp9SideTwoVC", "ref"]
+- !private ["C16DibnerLibraryApp9SideTwoVC", "revealViewController"]
+- !private ["C16DibnerLibraryApp9SideTwoVC", "view"]
+- ["C16DibnerLibraryApp9SideTwoVC", "viewDidLoad"]
+- !private ["PSo29UIAccessibilityIdentification", "action"]
+- !private ["PSo29UIAccessibilityIdentification", "addGestureRecognizer"]
+- !private ["PSo29UIAccessibilityIdentification", "target"]
+- !private ["PSo12UIAppearance", "action"]
+- !private ["PSo12UIAppearance", "addGestureRecognizer"]
+- !private ["PSo12UIAppearance", "target"]
+- !private ["PSo21UIAppearanceContainer", "addGestureRecognizer"]
+- !private ["PSo21UIAppearanceContainer", "dismissViewControllerAnimated"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "menuButton"]
+- ["PSo21UIAppearanceContainer", "onLogOutPressed"]
+- !private ["PSo21UIAppearanceContainer", "panGestureRecognizer"]
+- !private ["PSo21UIAppearanceContainer", "ref"]
+- !private ["PSo21UIAppearanceContainer", "revealToggle"]
+- !private ["PSo21UIAppearanceContainer", "revealViewController"]
+- !private ["PSo21UIAppearanceContainer", "view"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo15UIBarButtonItem", "action"]
+- !private ["CSo15UIBarButtonItem", "target"]
+- !private ["CSo9UIBarItem", "action"]
+- !private ["CSo9UIBarItem", "target"]
+- !private ["PSo18UIContentContainer", "dismissViewControllerAnimated"]
+- ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "menuButton"]
+- ["PSo18UIContentContainer", "onLogOutPressed"]
+- !private ["PSo18UIContentContainer", "panGestureRecognizer"]
+- !private ["PSo18UIContentContainer", "ref"]
+- !private ["PSo18UIContentContainer", "revealToggle"]
+- !private ["PSo18UIContentContainer", "revealViewController"]
+- !private ["PSo18UIContentContainer", "view"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "addGestureRecognizer"]
+- !private ["PSo13UIDynamicItem", "addGestureRecognizer"]
+- !private ["PSo18UIFocusEnvironment", "addGestureRecognizer"]
+- !private ["PSo18UIFocusEnvironment", "dismissViewControllerAnimated"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "menuButton"]
+- ["PSo18UIFocusEnvironment", "onLogOutPressed"]
+- !private ["PSo18UIFocusEnvironment", "panGestureRecognizer"]
+- !private ["PSo18UIFocusEnvironment", "ref"]
+- !private ["PSo18UIFocusEnvironment", "revealToggle"]
+- !private ["PSo18UIFocusEnvironment", "revealViewController"]
+- !private ["PSo18UIFocusEnvironment", "view"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- ["CSo11UIResponder", "AnyObject"]
+- ["CSo11UIResponder", "UIBarButtonItem"]
+- !private ["CSo11UIResponder", "addGestureRecognizer"]
+- !private ["CSo11UIResponder", "deinit"]
+- !private ["CSo11UIResponder", "dismissViewControllerAnimated"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "menuButton"]
+- ["CSo11UIResponder", "onLogOutPressed"]
+- !private ["CSo11UIResponder", "panGestureRecognizer"]
+- !private ["CSo11UIResponder", "ref"]
+- !private ["CSo11UIResponder", "revealToggle"]
+- !private ["CSo11UIResponder", "revealViewController"]
+- !private ["CSo11UIResponder", "view"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo16UIStateRestoring", "dismissViewControllerAnimated"]
+- ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "menuButton"]
+- ["PSo16UIStateRestoring", "onLogOutPressed"]
+- !private ["PSo16UIStateRestoring", "panGestureRecognizer"]
+- !private ["PSo16UIStateRestoring", "ref"]
+- !private ["PSo16UIStateRestoring", "revealToggle"]
+- !private ["PSo16UIStateRestoring", "revealViewController"]
+- !private ["PSo16UIStateRestoring", "view"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "addGestureRecognizer"]
+- !private ["PSo18UITraitEnvironment", "dismissViewControllerAnimated"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "menuButton"]
+- ["PSo18UITraitEnvironment", "onLogOutPressed"]
+- !private ["PSo18UITraitEnvironment", "panGestureRecognizer"]
+- !private ["PSo18UITraitEnvironment", "ref"]
+- !private ["PSo18UITraitEnvironment", "revealToggle"]
+- !private ["PSo18UITraitEnvironment", "revealViewController"]
+- !private ["PSo18UITraitEnvironment", "view"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "addGestureRecognizer"]
+- ["CSo16UIViewController", "AnyObject"]
+- ["CSo16UIViewController", "UIBarButtonItem"]
+- !private ["CSo16UIViewController", "deinit"]
+- !private ["CSo16UIViewController", "dismissViewControllerAnimated"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "menuButton"]
+- ["CSo16UIViewController", "onLogOutPressed"]
+- !private ["CSo16UIViewController", "panGestureRecognizer"]
+- !private ["CSo16UIViewController", "ref"]
+- !private ["CSo16UIViewController", "revealToggle"]
+- !private ["CSo16UIViewController", "revealViewController"]
+- !private ["CSo16UIViewController", "view"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "addGestureRecognizer"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "CSo6FQuery"
+- !private "CSo8Firebase"
+- "Ps8Hashable"
+- !private "SQ"
+- "PSo8NSCoding"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "Sq"
+- !private "CSo22SWRevealViewController"
+- !private "V10ObjectiveC8Selector"
+- "C16DibnerLibraryApp9SideTwoVC"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- !private "CSo15UIBarButtonItem"
+- !private "CSo9UIBarItem"
+- "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "CSo11UIResponder"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"
+- "/Users/Nick/Documents/DibnerLibrary/DibnerLibraryApp/bridging_header.h"
+- "/Users/Nick/Documents/DibnerLibrary/DibnerLibraryApp/SWRevealViewController.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreImage.swiftmodule"
+- "/Users/Nick/Documents/DibnerLibrary/DerivedData/DibnerLibraryApp/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/FirebaseServerValue.h"
+- "/Users/Nick/Documents/DibnerLibrary/DerivedData/DibnerLibraryApp/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/FTransactionResult.h"
+- "/Users/Nick/Documents/DibnerLibrary/DerivedData/DibnerLibraryApp/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/FMutableData.h"
+- "/Users/Nick/Documents/DibnerLibrary/DerivedData/DibnerLibraryApp/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/FirebaseApp.h"
+- "/Users/Nick/Documents/DibnerLibrary/DerivedData/DibnerLibraryApp/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/FQuery.h"
+- "/Users/Nick/Documents/DibnerLibrary/DerivedData/DibnerLibraryApp/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/Firebase.h"
+- "/Users/Nick/Documents/DibnerLibrary/DerivedData/DibnerLibraryApp/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/FEventType.h"
+- "/Users/Nick/Documents/DibnerLibrary/DerivedData/DibnerLibraryApp/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/FDataSnapshot.h"
+- "/Users/Nick/Documents/DibnerLibrary/DerivedData/DibnerLibraryApp/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/FConfig.h"
+- "/Users/Nick/Documents/DibnerLibrary/DerivedData/DibnerLibraryApp/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/FAuthType.h"
+- "/Users/Nick/Documents/DibnerLibrary/DerivedData/DibnerLibraryApp/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/FAuthData.h"
+- "/Users/Nick/Documents/DibnerLibrary/DerivedData/DibnerLibraryApp/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/Firebase-umbrella.h"
+- "/Users/Nick/Documents/DibnerLibrary/DerivedData/DibnerLibraryApp/Build/Products/Debug-iphonesimulator/Firebase.framework/Modules/module.modulemap"
+- "/Users/Nick/Documents/DibnerLibrary/DerivedData/DibnerLibraryApp/Build/Products/Debug-iphonesimulator/DropDown.framework/Modules/DropDown.swiftmodule/i386.swiftmodule"
+- "/Users/Nick/Documents/DibnerLibrary/DerivedData/DibnerLibraryApp/Build/Products/Debug-iphonesimulator/DropDown.framework/Headers/DropDown-Swift.h"
+- "/Users/Nick/Documents/DibnerLibrary/DerivedData/DibnerLibraryApp/Build/Products/Debug-iphonesimulator/DropDown.framework/Headers/DropDown-umbrella.h"
+- "/Users/Nick/Documents/DibnerLibrary/DerivedData/DibnerLibraryApp/Build/Products/Debug-iphonesimulator/DropDown.framework/Modules/module.modulemap"
+interface-hash: "cd0a1a15a219ed7cef5a0863622db89b"

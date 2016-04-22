@@ -1,0 +1,19 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
+options: "eb87d37b0ce1a3548fc9f79bf3a0abb3"
+build_time: [514668868, 7650000]
+inputs:
+  "/Users/Nick/Documents/DibnerLibrary/DibnerLibraryApp/SideThreeVC.swift": [514668288, 0]
+  "/Users/Nick/Documents/DibnerLibrary/DibnerLibraryApp/Date.swift": [514668288, 0]
+  "/Users/Nick/Documents/DibnerLibrary/DibnerLibraryApp/HomeVC.swift": [514668288, 0]
+  "/Users/Nick/Documents/DibnerLibrary/DibnerLibraryApp/Room.swift": [514668288, 0]
+  "/Users/Nick/Documents/DibnerLibrary/DibnerLibraryApp/ViewController.swift": [514668288, 0]
+  "/Users/Nick/Documents/DibnerLibrary/DibnerLibraryApp/DataService.swift": [514668288, 0]
+  "/Users/Nick/Documents/DibnerLibrary/DibnerLibraryApp/RoomCell.swift": [514668288, 0]
+  "/Users/Nick/Documents/DibnerLibrary/DibnerLibraryApp/reservationCell.swift": [514668288, 0]
+  "/Users/Nick/Documents/DibnerLibrary/DibnerLibraryApp/SideTwoVC.swift": [514668288, 0]
+  "/Users/Nick/Documents/DibnerLibrary/DibnerLibraryApp/AddPlantVC.swift": [514668288, 0]
+  "/Users/Nick/Documents/DibnerLibrary/DibnerLibraryApp/MapVC.swift": [514668288, 0]
+  "/Users/Nick/Documents/DibnerLibrary/DibnerLibraryApp/SideOneVC.swift": [514668288, 0]
+  "/Users/Nick/Documents/DibnerLibrary/DibnerLibraryApp/AppDelegate.swift": [514668288, 0]
+  "/Users/Nick/Documents/DibnerLibrary/DibnerLibraryApp/Util.swift": [514668288, 0]
+  "/Users/Nick/Documents/DibnerLibrary/DibnerLibraryApp/MenuVC.swift": [514668288, 0]

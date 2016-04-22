@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/Nick/Documents/DibnerLibrary/DerivedData/DibnerLibraryApp/Build/Products/Debug-iphonesimulator/DropDown.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/Nick/Documents/DibnerLibrary/DerivedData/DibnerLibraryApp/Build/Intermediates/Pods.build/Debug-iphonesimulator/DropDown.build/unextended-module.modulemap',
+    }]
+  }]
+}

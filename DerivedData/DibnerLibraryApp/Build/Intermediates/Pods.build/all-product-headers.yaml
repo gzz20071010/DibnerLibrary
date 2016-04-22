@@ -1,0 +1,142 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/Nick/Documents/DibnerLibrary/DerivedData/DibnerLibraryApp/Build/Products/Debug-iphonesimulator/DropDown.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "DropDown-Swift.h",
+          'external-contents': "/Users/Nick/Documents/DibnerLibrary/DerivedData/DibnerLibraryApp/Build/Products/Debug-iphonesimulator/DropDown.framework/Headers/DropDown-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "DropDown-umbrella.h",
+          'external-contents': "/Users/Nick/Documents/DibnerLibrary/Pods/Target Support Files/DropDown/DropDown-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Nick/Documents/DibnerLibrary/DerivedData/DibnerLibraryApp/Build/Products/Debug-iphonesimulator/DropDown.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Nick/Documents/DibnerLibrary/DerivedData/DibnerLibraryApp/Build/Intermediates/Pods.build/Debug-iphonesimulator/DropDown.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Nick/Documents/DibnerLibrary/DerivedData/DibnerLibraryApp/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FAuthData.h",
+          'external-contents': "/Users/Nick/Documents/DibnerLibrary/Pods/Firebase/FAuthData.h"
+        },
+        {
+          'type': 'file',
+          'name': "FAuthType.h",
+          'external-contents': "/Users/Nick/Documents/DibnerLibrary/Pods/Firebase/FAuthType.h"
+        },
+        {
+          'type': 'file',
+          'name': "FConfig.h",
+          'external-contents': "/Users/Nick/Documents/DibnerLibrary/Pods/Firebase/FConfig.h"
+        },
+        {
+          'type': 'file',
+          'name': "FDataSnapshot.h",
+          'external-contents': "/Users/Nick/Documents/DibnerLibrary/Pods/Firebase/FDataSnapshot.h"
+        },
+        {
+          'type': 'file',
+          'name': "FEventType.h",
+          'external-contents': "/Users/Nick/Documents/DibnerLibrary/Pods/Firebase/FEventType.h"
+        },
+        {
+          'type': 'file',
+          'name': "FMutableData.h",
+          'external-contents': "/Users/Nick/Documents/DibnerLibrary/Pods/Firebase/FMutableData.h"
+        },
+        {
+          'type': 'file',
+          'name': "FQuery.h",
+          'external-contents': "/Users/Nick/Documents/DibnerLibrary/Pods/Firebase/FQuery.h"
+        },
+        {
+          'type': 'file',
+          'name': "FTransactionResult.h",
+          'external-contents': "/Users/Nick/Documents/DibnerLibrary/Pods/Firebase/FTransactionResult.h"
+        },
+        {
+          'type': 'file',
+          'name': "Firebase-Swift.h",
+          'external-contents': "/Users/Nick/Documents/DibnerLibrary/DerivedData/DibnerLibraryApp/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/Firebase-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "Firebase-umbrella.h",
+          'external-contents': "/Users/Nick/Documents/DibnerLibrary/Pods/Target Support Files/Firebase/Firebase-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Firebase.h",
+          'external-contents': "/Users/Nick/Documents/DibnerLibrary/Pods/Firebase/Firebase.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseApp.h",
+          'external-contents': "/Users/Nick/Documents/DibnerLibrary/Pods/Firebase/FirebaseApp.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseServerValue.h",
+          'external-contents': "/Users/Nick/Documents/DibnerLibrary/Pods/Firebase/FirebaseServerValue.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Nick/Documents/DibnerLibrary/DerivedData/DibnerLibraryApp/Build/Products/Debug-iphonesimulator/Firebase.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Nick/Documents/DibnerLibrary/DerivedData/DibnerLibraryApp/Build/Intermediates/Pods.build/Debug-iphonesimulator/Firebase.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Nick/Documents/DibnerLibrary/DerivedData/DibnerLibraryApp/Build/Products/Debug-iphonesimulator/Pods_DibnerLibraryApp.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-DibnerLibraryApp-umbrella.h",
+          'external-contents': "/Users/Nick/Documents/DibnerLibrary/Pods/Target Support Files/Pods-DibnerLibraryApp/Pods-DibnerLibraryApp-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_DibnerLibraryApp-Swift.h",
+          'external-contents': "/Users/Nick/Documents/DibnerLibrary/DerivedData/DibnerLibraryApp/Build/Products/Debug-iphonesimulator/Pods_DibnerLibraryApp.framework/Headers/Pods_DibnerLibraryApp-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Nick/Documents/DibnerLibrary/DerivedData/DibnerLibraryApp/Build/Products/Debug-iphonesimulator/Pods_DibnerLibraryApp.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Nick/Documents/DibnerLibrary/DerivedData/DibnerLibraryApp/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-DibnerLibraryApp.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "HomeVC"
+provides-nominal:
+- "C16DibnerLibraryApp6HomeVC"
+provides-member:
+- ["C16DibnerLibraryApp6HomeVC", ""]
+provides-dynamic-lookup:
+- "waterBtnPressed"
+- "viewDidLoad"
+depends-top-level:
+- "HomeVC"
+- "Firebase"
+- !private "StringLiteralType"
+- !private "Dictionary"
+- "UIViewController"
+- !private "UID"
+- "AnyObject"
+depends-member:
+- ["Ps9AnyObject", "Firebase"]
+- !private ["Ps9AnyObject", "UID"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "ref"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", "waterBtnPressed"]
+- ["Ps9AnyObject", ""]
+- ["Ps11CVarArgType", "Firebase"]
+- !private ["Ps11CVarArgType", "UID"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "ref"]
+- ["Ps11CVarArgType", "viewDidLoad"]
+- ["Ps11CVarArgType", "waterBtnPressed"]
+- ["Ps11CVarArgType", ""]
+- !private ["Ps14CollectionType", "Key"]
+- !private ["Ps14CollectionType", "Value"]
+- ["Ps28CustomDebugStringConvertible", "Firebase"]
+- !private ["Ps28CustomDebugStringConvertible", "Key"]
+- !private ["Ps28CustomDebugStringConvertible", "UID"]
+- !private ["Ps28CustomDebugStringConvertible", "Value"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "ref"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", "waterBtnPressed"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps23CustomStringConvertible", "Firebase"]
+- !private ["Ps23CustomStringConvertible", "Key"]
+- !private ["Ps23CustomStringConvertible", "UID"]
+- !private ["Ps23CustomStringConvertible", "Value"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "ref"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", "waterBtnPressed"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Vs10Dictionary", "Key"]
+- !private ["Vs10Dictionary", "Value"]
+- !private ["Ps28DictionaryLiteralConvertible", "Key"]
+- !private ["Ps28DictionaryLiteralConvertible", "Value"]
+- ["Ps9Equatable", "Firebase"]
+- !private ["Ps9Equatable", "UID"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "ref"]
+- ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", "waterBtnPressed"]
+- ["Ps9Equatable", ""]
+- ["Ps8Hashable", "Firebase"]
+- !private ["Ps8Hashable", "UID"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "ref"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", "waterBtnPressed"]
+- ["Ps8Hashable", ""]
+- ["C16DibnerLibraryApp6HomeVC", "AnyObject"]
+- ["C16DibnerLibraryApp6HomeVC", "Firebase"]
+- !private ["C16DibnerLibraryApp6HomeVC", "UID"]
+- ["C16DibnerLibraryApp6HomeVC", "deinit"]
+- ["C16DibnerLibraryApp6HomeVC", "init"]
+- !private ["C16DibnerLibraryApp6HomeVC", "ref"]
+- ["C16DibnerLibraryApp6HomeVC", "viewDidLoad"]
+- ["C16DibnerLibraryApp6HomeVC", "waterBtnPressed"]
+- !private ["Ps9Indexable", "Key"]
+- !private ["Ps9Indexable", "Value"]
+- ["PSo8NSCoding", "Firebase"]
+- !private ["PSo8NSCoding", "UID"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "ref"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", "waterBtnPressed"]
+- ["PSo8NSCoding", ""]
+- ["PSo26NSExtensionRequestHandling", "Firebase"]
+- !private ["PSo26NSExtensionRequestHandling", "UID"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "ref"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", "waterBtnPressed"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- ["CSo8NSObject", "AnyObject"]
+- ["CSo8NSObject", "Firebase"]
+- !private ["CSo8NSObject", "UID"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "ref"]
+- ["CSo8NSObject", "viewDidLoad"]
+- ["CSo8NSObject", "waterBtnPressed"]
+- ["PSo16NSObjectProtocol", "Firebase"]
+- !private ["PSo16NSObjectProtocol", "UID"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "ref"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", "waterBtnPressed"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["Ps12SequenceType", "Key"]
+- !private ["Ps12SequenceType", "Value"]
+- ["PSo21UIAppearanceContainer", "Firebase"]
+- !private ["PSo21UIAppearanceContainer", "UID"]
+- ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "ref"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", "waterBtnPressed"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["PSo18UIContentContainer", "Firebase"]
+- !private ["PSo18UIContentContainer", "UID"]
+- ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "ref"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", "waterBtnPressed"]
+- ["PSo18UIContentContainer", ""]
+- ["PSo18UIFocusEnvironment", "Firebase"]
+- !private ["PSo18UIFocusEnvironment", "UID"]
+- ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "ref"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", "waterBtnPressed"]
+- ["PSo18UIFocusEnvironment", ""]
+- ["CSo11UIResponder", "AnyObject"]
+- ["CSo11UIResponder", "Firebase"]
+- !private ["CSo11UIResponder", "UID"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "ref"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- ["CSo11UIResponder", "waterBtnPressed"]
+- ["PSo16UIStateRestoring", "Firebase"]
+- !private ["PSo16UIStateRestoring", "UID"]
+- ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "ref"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", "waterBtnPressed"]
+- ["PSo16UIStateRestoring", ""]
+- ["PSo18UITraitEnvironment", "Firebase"]
+- !private ["PSo18UITraitEnvironment", "UID"]
+- ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "ref"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", "waterBtnPressed"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo16UIViewController", "AnyObject"]
+- ["CSo16UIViewController", "Firebase"]
+- !private ["CSo16UIViewController", "UID"]
+- ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "ref"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", "waterBtnPressed"]
+- ["CSo16UIViewController", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "Key"]
+- !private ["Ps21_ObjectiveCBridgeable", "Value"]
+- !private ["Ps12_Reflectable", "Key"]
+- !private ["Ps12_Reflectable", "Value"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Ps11CVarArgType"
+- !private "Ps14CollectionType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- !private "Vs10Dictionary"
+- !private "Ps28DictionaryLiteralConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "C16DibnerLibraryApp6HomeVC"
+- !private "Ps9Indexable"
+- "PSo8NSCoding"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "Ps12SequenceType"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- "PSo18UIFocusEnvironment"
+- "CSo11UIResponder"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- "CSo16UIViewController"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/Nick/Documents/DibnerLibrary/DibnerLibraryApp/bridging_header.h"
+- "/Users/Nick/Documents/DibnerLibrary/DibnerLibraryApp/SWRevealViewController.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/Nick/Documents/DibnerLibrary/DerivedData/DibnerLibraryApp/Build/Products/Debug-iphonesimulator/DropDown.framework/Modules/DropDown.swiftmodule/x86_64.swiftmodule"
+interface-hash: "952e149f98b6729aa2f55e3d4948acce"

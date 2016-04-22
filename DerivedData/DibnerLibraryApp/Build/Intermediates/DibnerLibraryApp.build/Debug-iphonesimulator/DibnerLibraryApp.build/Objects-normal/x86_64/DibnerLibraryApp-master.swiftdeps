@@ -1,0 +1,19 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
+options: "e1d24fb974c12dac780e2eb0279a357b"
+build_time: [514668714, 492845000]
+inputs:
+  "/Users/Nick/Documents/DibnerLibrary/DibnerLibraryApp/SideThreeVC.swift": !dirty [514668288, 0]
+  "/Users/Nick/Documents/DibnerLibrary/DibnerLibraryApp/Date.swift": !dirty [514668288, 0]
+  "/Users/Nick/Documents/DibnerLibrary/DibnerLibraryApp/HomeVC.swift": !dirty [514668288, 0]
+  "/Users/Nick/Documents/DibnerLibrary/DibnerLibraryApp/Room.swift": !dirty [514668288, 0]
+  "/Users/Nick/Documents/DibnerLibrary/DibnerLibraryApp/ViewController.swift": !dirty [514668288, 0]
+  "/Users/Nick/Documents/DibnerLibrary/DibnerLibraryApp/DataService.swift": !dirty [514668288, 0]
+  "/Users/Nick/Documents/DibnerLibrary/DibnerLibraryApp/RoomCell.swift": !dirty [514668288, 0]
+  "/Users/Nick/Documents/DibnerLibrary/DibnerLibraryApp/reservationCell.swift": !dirty [514668288, 0]
+  "/Users/Nick/Documents/DibnerLibrary/DibnerLibraryApp/SideTwoVC.swift": !dirty [514668288, 0]
+  "/Users/Nick/Documents/DibnerLibrary/DibnerLibraryApp/AddPlantVC.swift": !dirty [514668288, 0]
+  "/Users/Nick/Documents/DibnerLibrary/DibnerLibraryApp/MapVC.swift": !dirty [514668288, 0]
+  "/Users/Nick/Documents/DibnerLibrary/DibnerLibraryApp/SideOneVC.swift": !dirty [514668288, 0]
+  "/Users/Nick/Documents/DibnerLibrary/DibnerLibraryApp/AppDelegate.swift": !dirty [514668288, 0]
+  "/Users/Nick/Documents/DibnerLibrary/DibnerLibraryApp/Util.swift": !dirty [514668288, 0]
+  "/Users/Nick/Documents/DibnerLibrary/DibnerLibraryApp/MenuVC.swift": !dirty [514668288, 0]
