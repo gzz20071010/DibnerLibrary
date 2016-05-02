@@ -15,6 +15,12 @@ class SideOneVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
     @IBOutlet weak var tableView: UITableView!
     
     
+    @IBOutlet weak var beginTime: UILabel!
+    @IBOutlet weak var endTime: UILabel!
+    
+    @IBOutlet weak var dateLbl: UILabel!
+    @IBOutlet weak var roomNumber: UILabel!
+    
     //var reservations = Dictionary<String,AnyObject>()
     var reservations = [String]()
 
@@ -34,16 +40,38 @@ class SideOneVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
     }
 
     override func viewDidAppear(animated: Bool) {
+        var beginTime = [String]()
+        var endTime = [String]()
+        var roomNumberStr:String!
+       // var beginStr = String()
+       // var endStr = String()
+        
         let resRef = ref.childByAppendingPath("users").childByAppendingPath("\(UID)").childByAppendingPath("reservations")
 
         resRef.observeEventType(.Value, withBlock:{snapshot in
         self.reservations = [String]()
         if let snapshots = snapshot.children.allObjects as? [FDataSnapshot]{
             for snap in snapshots{
-                //print("SNAP: \(snap)")
+                print("SNAP: \(snap)")
                 // let value = snap.value
                 self.reservations.append("\(snap.key)")
+                roomNumberStr = snap.key
+                if let time = snap.value as? Dictionary<String,String> {
+                    for (key, value) in time{
+                        if let beginStr = key as? String{
+                            beginTime = parseDate(beginStr)
+                        }
+                        if let endStr = value as? String{
+                            endTime = parseDate(endStr)
+                        }
+                    }
+                }
             }
+            
+            self.roomNumber.text = "Room Number: \(roomNumberStr)"
+            self.beginTime.text = "Begin Time: \(beginTime[1]):\(beginTime[2])"
+            self.endTime.text = "End Time: \(endTime[1]):\(endTime[2])"
+            self.dateLbl.text = "Date: \(beginTime[2])"
                 
             //print("self.reservation: ", self.reservations)
             self.tableView.reloadData()
@@ -77,6 +105,9 @@ class SideOneVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
             }
         }
         return UITableViewCell()
+    }
+    
+    @IBAction func onCancelPressed(sender: AnyObject) {
     }
     
 }
