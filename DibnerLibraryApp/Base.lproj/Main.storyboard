@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -334,6 +335,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="j56-ef-NQJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.41176470588235292" green="0.10196078431372549" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="yug-WX-wy0" kind="relationship" relationship="rootViewController" id="nWW-Cl-ve8"/>
@@ -425,7 +430,7 @@
             </objects>
             <point key="canvasLocation" x="1945" y="-65"/>
         </scene>
-        <!--Side OneVC-->
+        <!--My Reservation-->
         <scene sceneID="9d7-hm-Zlf">
             <objects>
                 <viewController id="yug-WX-wy0" customClass="SideOneVC" customModule="DibnerLibraryApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -434,150 +439,177 @@
                         <viewControllerLayoutGuide type="bottom" id="tVD-Jb-PDe"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="cPA-KY-jSo">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="nyu" translatesAutoresizingMaskIntoConstraints="NO" id="uUT-6E-DK9">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Request" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWd-ue-Q2R">
-                                <rect key="frame" x="54" y="260" width="212" height="47"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
-                                <color key="textColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <tableView opaque="NO" clipsSubviews="YES" alpha="0.80000000000000004" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="68" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FYo-VZ-htl">
-                                <rect key="frame" x="6" y="5" width="308" height="494"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell opaque="NO" clipsSubviews="YES" alpha="0.80000000000000004" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReservationCell" rowHeight="68" id="LzB-tP-uqf" customClass="reservationCell" customModule="DibnerLibraryApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="308" height="68"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LzB-tP-uqf" id="HXe-ov-fxK">
-                                            <rect key="frame" x="0.0" y="0.0" width="308" height="67.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Room Reservation: 401" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u7q-T2-cug">
-                                                    <rect key="frame" x="8" y="19" width="292" height="27.5"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                                    <color key="textColor" red="0.43305595730000002" green="0.43356567610000002" blue="0.44134391620000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="u7q-T2-cug" firstAttribute="top" secondItem="HXe-ov-fxK" secondAttribute="topMargin" constant="11" id="2Rh-YP-jiY"/>
-                                                <constraint firstItem="u7q-T2-cug" firstAttribute="trailing" secondItem="HXe-ov-fxK" secondAttribute="trailingMargin" id="iid-Oo-uVp"/>
-                                                <constraint firstItem="u7q-T2-cug" firstAttribute="leading" secondItem="HXe-ov-fxK" secondAttribute="leadingMargin" id="n2O-4q-uoz"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="u7q-T2-cug" secondAttribute="bottom" constant="13" id="uTB-Jv-iXG"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="textLb" destination="u7q-T2-cug" id="TuC-89-NZ7"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ebl-cj-d4o">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ebl-cj-d4o" customClass="materialView" customModule="DibnerLibraryApp" customModuleProvider="target">
+                                <rect key="frame" x="10" y="10" width="300" height="440"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z01-Wt-Wy1">
-                                        <rect key="frame" x="8" y="429" width="304" height="57"/>
-                                        <color key="backgroundColor" red="0.90274136230000002" green="0.95746758639999996" blue="0.94831625249999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="           Room Number:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8s-1N-uRD" customClass="materialLabel" customModule="DibnerLibraryApp" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="15" width="284" height="70"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="izz-1a-1ZB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                        <color key="textColor" red="0.47843137250000001" green="0.1176470588" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="             Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HsK-bI-0Wv" customClass="materialLabel" customModule="DibnerLibraryApp" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="101" width="284" height="70"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="cei-sa-To1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="0.47843137250000001" green="0.1176470588" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="             Begin Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDE-9Z-CQg" customClass="materialLabel" customModule="DibnerLibraryApp" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="185" width="284" height="70"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="5fI-7I-LGx"/>
+                                            <constraint firstAttribute="width" secondItem="iDE-9Z-CQg" secondAttribute="height" multiplier="226:57" id="mEE-l8-arB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="0.47843137250000001" green="0.1176470588" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="mEE-l8-arB"/>
+                                            </mask>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="             End Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0d-A1-PV3" customClass="materialLabel" customModule="DibnerLibraryApp" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="271" width="284" height="70"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="I7Z-Au-N5Z"/>
+                                            <constraint firstAttribute="width" secondItem="F0d-A1-PV3" secondAttribute="height" multiplier="226:57" id="nVQ-Fw-KzK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="0.47843137250000001" green="0.1176470588" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="nVQ-Fw-KzK"/>
+                                            </mask>
+                                        </variation>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z01-Wt-Wy1" customClass="materialButton" customModule="DibnerLibraryApp" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="365" width="284" height="57"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="57" id="ncX-Cx-Db9"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
                                         <state key="normal" title="Cancel">
-                                            <color key="titleColor" red="0.43305595730000002" green="0.43356567610000002" blue="0.44134391620000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" red="0.47843137250000001" green="0.1176470588" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="onCancelPressed:" destination="yug-WX-wy0" eventType="touchUpInside" id="Mxz-eO-Vj9"/>
                                         </connections>
                                     </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="udk-Qc-I9X">
-                                        <rect key="frame" x="8" y="20" width="304" height="353"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HsK-bI-0Wv">
-                                                <rect key="frame" x="0.0" y="0.0" width="304" height="74"/>
-                                                <color key="backgroundColor" red="0.90274136230000002" green="0.95746758639999996" blue="0.94831625249999996" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
-                                                <color key="textColor" red="0.43305595730000002" green="0.43356567610000002" blue="0.44134391620000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Begin Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDE-9Z-CQg">
-                                                <rect key="frame" x="0.0" y="94" width="304" height="73"/>
-                                                <color key="backgroundColor" red="0.90274136230000002" green="0.95746758639999996" blue="0.94831625249999996" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
-                                                <color key="textColor" red="0.43305595730000002" green="0.43356567610000002" blue="0.44134391620000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0d-A1-PV3">
-                                                <rect key="frame" x="0.0" y="187" width="304" height="74"/>
-                                                <color key="backgroundColor" red="0.90274136230000002" green="0.95746758639999996" blue="0.94831625249999996" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
-                                                <color key="textColor" red="0.43305595730000002" green="0.43356567610000002" blue="0.44134391620000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Room Number:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8s-1N-uRD">
-                                                <rect key="frame" x="0.0" y="280" width="304" height="73"/>
-                                                <color key="backgroundColor" red="0.90274136230000002" green="0.95746758639999996" blue="0.94831625249999996" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
-                                                <color key="textColor" red="0.43305595730000002" green="0.43356567610000002" blue="0.44134391620000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="number" translatesAutoresizingMaskIntoConstraints="NO" id="Je6-E5-gHg">
+                                        <rect key="frame" x="13" y="25" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="4Us-O9-nSh"/>
+                                            <constraint firstAttribute="width" constant="50" id="fSc-0z-24U"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="aD0-1W-9M5">
+                                        <rect key="frame" x="13" y="111" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="8o3-Ka-vYY"/>
+                                            <constraint firstAttribute="height" constant="50" id="lli-gU-bkl"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="time" translatesAutoresizingMaskIntoConstraints="NO" id="Cwf-PU-fWM">
+                                        <rect key="frame" x="13" y="195" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="RUs-57-6Ny"/>
+                                            <constraint firstAttribute="height" constant="50" id="zmx-RX-EbP"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="time" translatesAutoresizingMaskIntoConstraints="NO" id="n2h-HS-8oi">
+                                        <rect key="frame" x="13" y="281" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="ZE9-mo-qXn"/>
+                                            <constraint firstAttribute="width" constant="50" id="xXp-Xi-TQ1"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cancel" translatesAutoresizingMaskIntoConstraints="NO" id="73L-4W-f07">
+                                        <rect key="frame" x="13" y="374" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="VoI-LC-hCa"/>
+                                            <constraint firstAttribute="width" constant="40" id="m0R-e3-hBf"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="Z01-Wt-Wy1" secondAttribute="bottom" constant="18" id="1Zt-6c-gsI"/>
+                                    <constraint firstItem="F0d-A1-PV3" firstAttribute="top" secondItem="iDE-9Z-CQg" secondAttribute="bottom" constant="16" id="4bS-Gp-tpF"/>
+                                    <constraint firstAttribute="trailing" secondItem="t8s-1N-uRD" secondAttribute="trailing" constant="8" id="4xm-BQ-OoP"/>
+                                    <constraint firstItem="aD0-1W-9M5" firstAttribute="top" secondItem="t8s-1N-uRD" secondAttribute="bottom" constant="26" id="5K9-bO-19J"/>
+                                    <constraint firstItem="n2h-HS-8oi" firstAttribute="leading" secondItem="Ebl-cj-d4o" secondAttribute="leading" constant="13" id="9w2-7w-iDY"/>
+                                    <constraint firstItem="HsK-bI-0Wv" firstAttribute="top" secondItem="t8s-1N-uRD" secondAttribute="bottom" constant="16" id="B9k-Jv-19M"/>
+                                    <constraint firstItem="Cwf-PU-fWM" firstAttribute="top" secondItem="HsK-bI-0Wv" secondAttribute="bottom" constant="24" id="D1a-7b-NDR"/>
+                                    <constraint firstAttribute="trailing" secondItem="HsK-bI-0Wv" secondAttribute="trailing" constant="8" id="GLe-gk-Xzg"/>
+                                    <constraint firstItem="Cwf-PU-fWM" firstAttribute="leading" secondItem="Ebl-cj-d4o" secondAttribute="leading" constant="13" id="HG2-ho-iAA"/>
                                     <constraint firstItem="Z01-Wt-Wy1" firstAttribute="leading" secondItem="Ebl-cj-d4o" secondAttribute="leading" constant="8" id="HVC-RT-bxh"/>
                                     <constraint firstAttribute="trailing" secondItem="Z01-Wt-Wy1" secondAttribute="trailing" constant="8" id="OUb-20-C1N"/>
-                                    <constraint firstAttribute="trailing" secondItem="udk-Qc-I9X" secondAttribute="trailing" constant="8" id="P3Q-lc-XzR"/>
-                                    <constraint firstItem="Z01-Wt-Wy1" firstAttribute="top" secondItem="udk-Qc-I9X" secondAttribute="bottom" constant="100" id="bND-uj-hkm"/>
-                                    <constraint firstItem="udk-Qc-I9X" firstAttribute="leading" secondItem="Ebl-cj-d4o" secondAttribute="leading" constant="8" id="gSG-FM-Kry"/>
-                                    <constraint firstItem="udk-Qc-I9X" firstAttribute="top" secondItem="Ebl-cj-d4o" secondAttribute="top" constant="20" id="y1k-x7-2je"/>
+                                    <constraint firstItem="Je6-E5-gHg" firstAttribute="top" secondItem="Ebl-cj-d4o" secondAttribute="top" constant="25" id="Onl-yS-3b4"/>
+                                    <constraint firstItem="iDE-9Z-CQg" firstAttribute="top" secondItem="HsK-bI-0Wv" secondAttribute="bottom" constant="14" id="PMW-pf-6vN"/>
+                                    <constraint firstAttribute="bottom" secondItem="73L-4W-f07" secondAttribute="bottom" constant="26" id="RdQ-V6-Vaj"/>
+                                    <constraint firstItem="73L-4W-f07" firstAttribute="leading" secondItem="Ebl-cj-d4o" secondAttribute="leading" constant="13" id="S2o-PL-5F9"/>
+                                    <constraint firstItem="t8s-1N-uRD" firstAttribute="top" secondItem="Ebl-cj-d4o" secondAttribute="top" constant="15" id="VCx-eZ-s17"/>
+                                    <constraint firstItem="n2h-HS-8oi" firstAttribute="top" secondItem="iDE-9Z-CQg" secondAttribute="bottom" constant="26" id="Wwe-kV-RkE"/>
+                                    <constraint firstAttribute="trailing" secondItem="F0d-A1-PV3" secondAttribute="trailing" constant="8" id="YwH-qD-N1N"/>
+                                    <constraint firstAttribute="trailing" secondItem="iDE-9Z-CQg" secondAttribute="trailing" constant="8" id="Z4I-E5-kcd"/>
+                                    <constraint firstItem="HsK-bI-0Wv" firstAttribute="leading" secondItem="Ebl-cj-d4o" secondAttribute="leading" constant="8" id="bEn-R4-P20"/>
+                                    <constraint firstItem="t8s-1N-uRD" firstAttribute="leading" secondItem="Ebl-cj-d4o" secondAttribute="leading" constant="8" id="dl0-VH-Ltj"/>
+                                    <constraint firstItem="aD0-1W-9M5" firstAttribute="leading" secondItem="Ebl-cj-d4o" secondAttribute="leading" constant="13" id="qo8-hd-luA"/>
+                                    <constraint firstItem="F0d-A1-PV3" firstAttribute="leading" secondItem="Ebl-cj-d4o" secondAttribute="leading" constant="8" id="srW-Ds-UzT"/>
+                                    <constraint firstItem="Je6-E5-gHg" firstAttribute="leading" secondItem="Ebl-cj-d4o" secondAttribute="leading" constant="13" id="tjn-4q-xo4"/>
+                                    <constraint firstItem="iDE-9Z-CQg" firstAttribute="leading" secondItem="Ebl-cj-d4o" secondAttribute="leading" constant="8" id="xMG-0b-65H"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.94117647059999998" green="0.94901960780000005" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.89124999631982815" green="0.89229902214229095" blue="0.90830701462765961" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="Ebl-cj-d4o" secondAttribute="bottom" id="1b1-LG-iPj"/>
-                            <constraint firstItem="FYo-VZ-htl" firstAttribute="top" secondItem="2nz-RA-lR1" secondAttribute="bottom" constant="5" id="Af6-To-xYg"/>
+                            <constraint firstItem="tVD-Jb-PDe" firstAttribute="top" secondItem="Ebl-cj-d4o" secondAttribute="bottom" constant="10" id="78q-k2-jnY"/>
                             <constraint firstAttribute="trailing" secondItem="Ebl-cj-d4o" secondAttribute="trailing" id="CD1-T9-2IZ"/>
-                            <constraint firstItem="OWd-ue-Q2R" firstAttribute="centerX" secondItem="cPA-KY-jSo" secondAttribute="centerX" id="Cgf-ZY-B1K"/>
-                            <constraint firstItem="FYo-VZ-htl" firstAttribute="leading" secondItem="cPA-KY-jSo" secondAttribute="leadingMargin" id="DDG-lL-LRR"/>
-                            <constraint firstItem="FYo-VZ-htl" firstAttribute="leading" secondItem="cPA-KY-jSo" secondAttribute="leadingMargin" constant="-10" id="FSn-b9-xkd"/>
-                            <constraint firstItem="uUT-6E-DK9" firstAttribute="leading" secondItem="cPA-KY-jSo" secondAttribute="leading" id="Gac-6p-4Ca"/>
                             <constraint firstItem="Ebl-cj-d4o" firstAttribute="leading" secondItem="cPA-KY-jSo" secondAttribute="leading" id="N6J-MS-GFX"/>
-                            <constraint firstAttribute="trailing" secondItem="uUT-6E-DK9" secondAttribute="trailing" id="NBZ-sT-OX2"/>
-                            <constraint firstItem="uUT-6E-DK9" firstAttribute="top" secondItem="cPA-KY-jSo" secondAttribute="top" id="aFl-Cx-d3Y"/>
+                            <constraint firstItem="Ebl-cj-d4o" firstAttribute="leading" secondItem="cPA-KY-jSo" secondAttribute="leading" constant="10" id="Nmw-Yr-kI2"/>
                             <constraint firstItem="Ebl-cj-d4o" firstAttribute="top" secondItem="2nz-RA-lR1" secondAttribute="bottom" id="biE-Is-qKK"/>
-                            <constraint firstItem="tVD-Jb-PDe" firstAttribute="top" secondItem="FYo-VZ-htl" secondAttribute="bottom" constant="5" id="iby-kv-GV4"/>
-                            <constraint firstItem="tVD-Jb-PDe" firstAttribute="top" secondItem="uUT-6E-DK9" secondAttribute="bottom" id="jlJ-2X-CQT"/>
-                            <constraint firstItem="OWd-ue-Q2R" firstAttribute="centerY" secondItem="cPA-KY-jSo" secondAttribute="centerY" id="rhg-c7-wtN"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="FYo-VZ-htl" secondAttribute="trailing" id="t2V-RN-UF3"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="FYo-VZ-htl" secondAttribute="trailing" constant="-10" id="wdP-Y9-LBR"/>
+                            <constraint firstAttribute="trailing" secondItem="Ebl-cj-d4o" secondAttribute="trailing" constant="10" id="iiV-2m-M7A"/>
+                            <constraint firstItem="Ebl-cj-d4o" firstAttribute="top" secondItem="2nz-RA-lR1" secondAttribute="bottom" constant="10" id="uLo-nc-jer"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="DDG-lL-LRR"/>
-                                <exclude reference="t2V-RN-UF3"/>
+                                <exclude reference="1b1-LG-iPj"/>
+                                <exclude reference="CD1-T9-2IZ"/>
+                                <exclude reference="N6J-MS-GFX"/>
+                                <exclude reference="biE-Is-qKK"/>
                             </mask>
                         </variation>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
-                    <navigationItem key="navigationItem" id="oK8-3D-Moy">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="My Reservation" id="oK8-3D-Moy">
                         <barButtonItem key="leftBarButtonItem" image="menu" id="PbE-h5-HIL">
                             <color key="tintColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="add" id="Dth-mj-I5V">
-                            <color key="tintColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="Iug-Ys-gT6" kind="show" id="0k5-eJ-OMr"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="beginTime" destination="iDE-9Z-CQg" id="MiM-Qr-glS"/>
@@ -585,7 +617,6 @@
                         <outlet property="endTime" destination="F0d-A1-PV3" id="6mN-VB-fHE"/>
                         <outlet property="menuButton" destination="PbE-h5-HIL" id="mHK-ON-9F0"/>
                         <outlet property="roomNumber" destination="t8s-1N-uRD" id="4Q5-FT-3ob"/>
-                        <outlet property="tableView" destination="FYo-VZ-htl" id="MjS-Ad-Xro"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sv0-aj-Gsb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -601,49 +632,49 @@
                         <viewControllerLayoutGuide type="bottom" id="iyg-GS-4Fb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="zlf-4i-2IM">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GHT-4v-36j">
-                                <rect key="frame" x="16" y="70" width="210" height="68"/>
+                                <rect key="frame" x="16" y="20" width="210" height="68"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="KCb-Tg-cTZ">
                                         <rect key="frame" x="0.0" y="0.0" width="210" height="30"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Begin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yH8-4S-xP8">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Begin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yH8-4S-xP8" customClass="materialLabel" customModule="DibnerLibraryApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="49" height="30"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.47843137250000001" green="0.1176470588" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cp4-H5-n9z">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cp4-H5-n9z" customClass="materialButton" customModule="DibnerLibraryApp" customModuleProvider="target">
                                                 <rect key="frame" x="54" y="0.0" width="48.5" height="30"/>
-                                                <color key="backgroundColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                 <state key="normal" title="Day">
-                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleColor" red="0.47843137250000001" green="0.1176470588" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="onDropDownBtnPressed:" destination="Iug-Ys-gT6" eventType="touchUpInside" id="vt6-ZP-7hu"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCX-nt-I3F">
-                                                <rect key="frame" x="107" y="0.0" width="49" height="30"/>
-                                                <color key="backgroundColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCX-nt-I3F" customClass="materialButton" customModule="DibnerLibraryApp" customModuleProvider="target">
+                                                <rect key="frame" x="107.5" y="0.0" width="49" height="30"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                 <state key="normal" title="Hour">
-                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleColor" red="0.47843137250000001" green="0.1176470588" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="onHourBtnPressed:" destination="Iug-Ys-gT6" eventType="touchUpInside" id="NBg-q1-55e"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3R4-cJ-M0o">
-                                                <rect key="frame" x="161" y="0.0" width="48.5" height="30"/>
-                                                <color key="backgroundColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3R4-cJ-M0o" customClass="materialButton" customModule="DibnerLibraryApp" customModuleProvider="target">
+                                                <rect key="frame" x="161.5" y="0.0" width="48.5" height="30"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                 <state key="normal" title="Minute">
-                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleColor" red="0.47843137250000001" green="0.1176470588" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="onMinBtnPressed:" destination="Iug-Ys-gT6" eventType="touchUpInside" id="bGd-sk-SfF"/>
@@ -654,21 +685,21 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="P7o-Zi-f8g">
                                         <rect key="frame" x="0.0" y="38" width="210" height="30"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlV-pj-3qg">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlV-pj-3qg" customClass="materialLabel" customModule="DibnerLibraryApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="49" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.47843137250000001" green="0.1176470588" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i5v-C5-81k">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i5v-C5-81k" customClass="materialButton" customModule="DibnerLibraryApp" customModuleProvider="target">
                                                 <rect key="frame" x="54" y="0.0" width="48.5" height="30"/>
-                                                <color key="backgroundColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="57" id="19o-oc-wTg"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                 <state key="normal" title="Day">
-                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleColor" red="0.47843137250000001" green="0.1176470588" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <variation key="default">
                                                     <mask key="constraints">
@@ -679,23 +710,23 @@
                                                     <action selector="onDate2Pressed:" destination="Iug-Ys-gT6" eventType="touchUpInside" id="HBP-yN-EmQ"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AgQ-5l-es6">
-                                                <rect key="frame" x="107" y="0.0" width="49" height="30"/>
-                                                <color key="backgroundColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AgQ-5l-es6" customClass="materialButton" customModule="DibnerLibraryApp" customModuleProvider="target">
+                                                <rect key="frame" x="107.5" y="0.0" width="49" height="30"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                 <state key="normal" title="Hour">
-                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleColor" red="0.47843137250000001" green="0.1176470588" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="onHr2Pressed:" destination="Iug-Ys-gT6" eventType="touchUpInside" id="h8H-nO-xVV"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CjM-X1-AW5">
-                                                <rect key="frame" x="161" y="0.0" width="48.5" height="30"/>
-                                                <color key="backgroundColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CjM-X1-AW5" customClass="materialButton" customModule="DibnerLibraryApp" customModuleProvider="target">
+                                                <rect key="frame" x="161.5" y="0.0" width="48.5" height="30"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                 <state key="normal" title="Minute">
-                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleColor" red="0.47843137250000001" green="0.1176470588" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="onMin2Pressed:" destination="Iug-Ys-gT6" eventType="touchUpInside" id="kd4-sn-N30"/>
@@ -706,11 +737,11 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="srq-LW-8kk">
-                                <rect key="frame" x="16" y="430" width="288" height="70"/>
+                                <rect key="frame" x="16" y="366" width="288" height="70"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HkV-if-mbp">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HkV-if-mbp" customClass="materialButton" customModule="DibnerLibraryApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="30"/>
-                                        <color key="backgroundColor" red="0.82803781249999997" green="0.82901243589999996" blue="0.84388505650000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.47843137250000001" green="0.1176470588" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Add">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -718,11 +749,11 @@
                                             <action selector="onAddPressed:" destination="Iug-Ys-gT6" eventType="touchUpInside" id="uwB-DF-nDY"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vqu-j1-Fie">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vqu-j1-Fie" customClass="materialButton" customModule="DibnerLibraryApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="40" width="288" height="30"/>
-                                        <color key="backgroundColor" red="0.82803781249999997" green="0.82901243589999996" blue="0.84388505650000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Cancel">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" red="0.47843137250000001" green="0.1176470588" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="onCancelPressed:" destination="Iug-Ys-gT6" eventType="touchUpInside" id="Fju-GG-5wd"/>
@@ -730,14 +761,14 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Room Number or Laptop Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jax-rw-Wa5">
-                                <rect key="frame" x="16" y="146" width="288" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Room Number or Laptop Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jax-rw-Wa5" customClass="materialTextFeild" customModule="DibnerLibraryApp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="96" width="288" height="30"/>
                                 <color key="textColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="myj-7Y-ShG">
-                                <rect key="frame" x="16" y="184" width="288" height="238"/>
+                                <rect key="frame" x="16" y="134" width="288" height="224"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RoomCell" id="yTv-SH-tUt" customClass="RoomCell" customModule="DibnerLibraryApp" customModuleProvider="target">
@@ -767,9 +798,9 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBn-TM-nKR">
-                                <rect key="frame" x="234" y="70" width="70" height="68"/>
-                                <color key="backgroundColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBn-TM-nKR" customClass="materialButton" customModule="DibnerLibraryApp" customModuleProvider="target">
+                                <rect key="frame" x="234" y="20" width="70" height="68"/>
+                                <color key="backgroundColor" red="0.47843137250000001" green="0.1176470588" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="Opy-RD-zfA"/>
                                 </constraints>
@@ -789,13 +820,13 @@
                             <constraint firstItem="srq-LW-8kk" firstAttribute="trailing" secondItem="zlf-4i-2IM" secondAttribute="trailingMargin" id="89T-yr-C3r"/>
                             <constraint firstAttribute="trailingMargin" secondItem="OBn-TM-nKR" secondAttribute="trailing" id="8le-1B-0CP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="jax-rw-Wa5" secondAttribute="trailing" id="9OJ-HF-a68"/>
-                            <constraint firstItem="OBn-TM-nKR" firstAttribute="top" secondItem="hAo-NX-Vm2" secondAttribute="bottom" constant="50" id="Bq1-6W-MtC"/>
+                            <constraint firstItem="OBn-TM-nKR" firstAttribute="top" secondItem="hAo-NX-Vm2" secondAttribute="bottom" constant="20" id="Bq1-6W-MtC"/>
                             <constraint firstItem="OBn-TM-nKR" firstAttribute="leading" secondItem="GHT-4v-36j" secondAttribute="trailing" constant="8" id="Ftw-2i-EaV"/>
                             <constraint firstItem="srq-LW-8kk" firstAttribute="leading" secondItem="zlf-4i-2IM" secondAttribute="leadingMargin" id="ORP-QO-FhC"/>
                             <constraint firstItem="GHT-4v-36j" firstAttribute="leading" secondItem="zlf-4i-2IM" secondAttribute="leadingMargin" id="S8A-b0-guN"/>
                             <constraint firstItem="srq-LW-8kk" firstAttribute="top" secondItem="myj-7Y-ShG" secondAttribute="bottom" constant="8" id="SKn-nw-irC"/>
                             <constraint firstItem="myj-7Y-ShG" firstAttribute="leading" secondItem="zlf-4i-2IM" secondAttribute="leadingMargin" id="TLe-0n-eJ2"/>
-                            <constraint firstItem="GHT-4v-36j" firstAttribute="top" secondItem="hAo-NX-Vm2" secondAttribute="bottom" constant="50" id="Ycs-fx-6h4"/>
+                            <constraint firstItem="GHT-4v-36j" firstAttribute="top" secondItem="hAo-NX-Vm2" secondAttribute="bottom" constant="20" id="Ycs-fx-6h4"/>
                             <constraint firstItem="myj-7Y-ShG" firstAttribute="top" secondItem="jax-rw-Wa5" secondAttribute="bottom" constant="8" id="YtX-sE-MCF"/>
                             <constraint firstItem="jax-rw-Wa5" firstAttribute="leading" secondItem="zlf-4i-2IM" secondAttribute="leadingMargin" id="eRt-Dm-jfG"/>
                             <constraint firstItem="srq-LW-8kk" firstAttribute="leading" secondItem="zlf-4i-2IM" secondAttribute="leadingMargin" id="hOy-aF-f2U"/>
@@ -810,10 +841,11 @@
                             </mask>
                         </variation>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="4oq-Cu-vMu">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Onf-I3-kZb">
-                            <color key="tintColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="yug-WX-wy0" kind="show" identifier="sideOneVC" animates="NO" id="SC8-hF-3NB"/>
                             </connections>
@@ -1255,9 +1287,13 @@
     </scenes>
     <resources>
         <image name="add" width="22" height="22"/>
+        <image name="calendar" width="128" height="128"/>
+        <image name="cancel" width="128" height="128"/>
         <image name="menu" width="22" height="22"/>
+        <image name="number" width="128" height="128"/>
         <image name="nyu" width="864" height="792"/>
         <image name="nyubg" width="1122" height="1122"/>
+        <image name="time" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="8NJ-rp-JDi"/>

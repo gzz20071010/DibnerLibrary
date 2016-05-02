@@ -23,6 +23,9 @@ let STATUS_ACCOUNT_NONEXIST = -8
 var UID:String!
 var USERNAME:String!
 
+
+let SHADOW_COLOR: CGFloat = 157.0/255.0
+
 let ref = Firebase(url: "https://dibnerlibraryapp.firebaseio.com")
 
 let GREEN = 0x7ACE18

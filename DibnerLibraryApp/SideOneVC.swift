@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class SideOneVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
+class SideOneVC: UIViewController {
 
     @IBOutlet weak var menuButton:UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
@@ -28,14 +28,18 @@ class SideOneVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.revealViewController().rearViewRevealWidth = 160
-        tableView.dataSource = self
-        tableView.delegate = self
 
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()
             menuButton.action = "revealToggle:"
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
+        
+        self.navigationItem.title = "My Reservation"
+        self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+        self.navigationItem.leftBarButtonItem?.tintColor = UIColor.whiteColor()
+        self.navigationController?.navigationBar.translucent = false
+
         
     }
 
@@ -68,44 +72,44 @@ class SideOneVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
                 }
             }
             
-            self.roomNumber.text = "Room Number: \(roomNumberStr)"
-            self.beginTime.text = "Begin Time: \(beginTime[1]):\(beginTime[2])"
-            self.endTime.text = "End Time: \(endTime[1]):\(endTime[2])"
-            self.dateLbl.text = "Date: \(beginTime[2])"
+            self.roomNumber.text = "           Room Number: \(roomNumberStr)"
+            self.beginTime.text = "              Begin Time: \(beginTime[1]):\(beginTime[2])"
+            self.endTime.text = "              End Time: \(endTime[1]):\(endTime[2])"
+            self.dateLbl.text = "              Date: \(beginTime[2])"
                 
             //print("self.reservation: ", self.reservations)
-            self.tableView.reloadData()
+          //  self.tableView.reloadData()
             
             
-            if self.reservations.count == 0 {
-                self.tableView.hidden = true
-            }else{
-                self.tableView.hidden = false
-            }
+//            if self.reservations.count == 0 {
+//                self.tableView.hidden = true
+//            }else{
+//                self.tableView.hidden = false
+//            }
         }
         })
 
     }
-    
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
-    }
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return reservations.count
-    }
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCellWithIdentifier("ReservationCell", forIndexPath: indexPath) as? reservationCell{
-            let str = reservations[indexPath.row]
-            if let myNumber = NSNumberFormatter().numberFromString(str) {
-                let myInt = myNumber.integerValue
-                cell.parseData(myInt)
-                //cell.textLb.text = str
-                //print(reservations[indexPath.row])
-                return cell
-            }
-        }
-        return UITableViewCell()
-    }
+//    
+//    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+//        return 1
+//    }
+//    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return reservations.count
+//    }
+//    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+//        if let cell = tableView.dequeueReusableCellWithIdentifier("ReservationCell", forIndexPath: indexPath) as? reservationCell{
+//            let str = reservations[indexPath.row]
+//            if let myNumber = NSNumberFormatter().numberFromString(str) {
+//                let myInt = myNumber.integerValue
+//                cell.parseData(myInt)
+//                //cell.textLb.text = str
+//                //print(reservations[indexPath.row])
+//                return cell
+//            }
+//        }
+//        return UITableViewCell()
+//    }
     
     @IBAction func onCancelPressed(sender: AnyObject) {
     }

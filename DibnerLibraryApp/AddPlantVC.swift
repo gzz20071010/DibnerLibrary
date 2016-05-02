@@ -40,11 +40,14 @@ class AddPlantVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationItem.title = "New Reservation"
+        self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+        
         //day datasource
         dropDown.dataSource = [
-            "\(DAY)",
-            "\(DAY+1)",
-            "\(DAY+2)"
+            "0\(DAY)",
+            "0\(DAY+1)",
+            "0\(DAY+2)"
         ]
         
         dropDown4.dataSource = dropDown.dataSource
