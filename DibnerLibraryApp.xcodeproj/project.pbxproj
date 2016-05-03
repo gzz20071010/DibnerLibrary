@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		176390811CD92CCD00F0FF6B /* MapVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176390801CD92CCD00F0FF6B /* MapVC2.swift */; };
 		1768619B1CB2D9A8006145EA /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1768619A1CB2D9A8006145EA /* DataService.swift */; };
 		1768619D1CB2F7BE006145EA /* reservationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1768619C1CB2F7BE006145EA /* reservationCell.swift */; };
 		1790E18B1C6C4C5B009231A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1790E18A1C6C4C5B009231A8 /* AppDelegate.swift */; };
@@ -38,6 +39,7 @@
 		17315C231CBEC067004E95A2 /* bridging_header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bridging_header.h; path = ../bridging_header.h; sourceTree = "<group>"; };
 		17315C241CBEC1E5004E95A2 /* bridging_header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bridging_header.h; sourceTree = "<group>"; };
 		173A24FF1CBEBC78003EF84B /* DibnerLibraryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DibnerLibraryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		176390801CD92CCD00F0FF6B /* MapVC2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVC2.swift; sourceTree = "<group>"; };
 		1768619A1CB2D9A8006145EA /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		1768619C1CB2F7BE006145EA /* reservationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = reservationCell.swift; sourceTree = "<group>"; };
 		1790E18A1C6C4C5B009231A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				1798554F1C6DC8C400DD523F /* SideThreeVC.swift */,
 				179855551C6DD28500DD523F /* AddPlantVC.swift */,
 				179A8BFA1CA3117200A381C0 /* MapVC.swift */,
+				176390801CD92CCD00F0FF6B /* MapVC2.swift */,
 				17E9A1D41CD8825A00B22835 /* ChatroomVC.swift */,
 				179855441C6DAA5D00DD523F /* SWRevealViewController */,
 			);
@@ -305,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				176390811CD92CCD00F0FF6B /* MapVC2.swift in Sources */,
 				179855501C6DC8C400DD523F /* SideThreeVC.swift in Sources */,
 				17DAA5781CC1AC9B005589EE /* Date.swift in Sources */,
 				17E9A1D21CD7E21D00B22835 /* materialTextFeild.swift in Sources */,

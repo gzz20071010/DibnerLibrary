@@ -11,14 +11,6 @@ import Firebase
 
 class MapVC: UIViewController {
     
-    @IBOutlet weak var room432: UIButton!
-    @IBOutlet weak var room434: UIButton!
-    @IBOutlet weak var room445: UIButton!
-    @IBOutlet weak var room445A: UIButton!
-    @IBOutlet weak var room445B: UIButton!
-    @IBOutlet weak var room445C: UIButton!
-    @IBOutlet weak var room445D: UIButton!
-    
     @IBOutlet weak var room327: UIButton!
     @IBOutlet weak var room328: UIButton!
     @IBOutlet weak var room335: UIButton!
@@ -209,57 +201,6 @@ class MapVC: UIViewController {
                     room335.backgroundColor = UIColor(netHex: Int(GREEN))
                 }else{
                     room335.backgroundColor = UIColor(netHex: Int(BLUE))
-                }
-            }
-            if room.roomNumber == "432"{
-                if checkCurrentAvailablity(room){
-                    room432.backgroundColor = UIColor(netHex: Int(GREEN))
-                }else{
-                    room432.backgroundColor = UIColor(netHex: Int(BLUE))
-                }
-            }
-            
-            if room.roomNumber == "434"{
-                if checkCurrentAvailablity(room){
-                    room434.backgroundColor = UIColor(netHex: Int(GREEN))
-                }else{
-                    room434.backgroundColor = UIColor(netHex: Int(BLUE))
-                }
-            }
-            
-            if room.roomNumber == "445"{
-                if checkCurrentAvailablity(room){
-                    room445.backgroundColor = UIColor(netHex: Int(GREEN))
-                }else{
-                    room445.backgroundColor = UIColor(netHex: Int(BLUE))
-                }
-            }
-            if room.roomNumber == "445A"{
-                if checkCurrentAvailablity(room){
-                    room445A.backgroundColor = UIColor(netHex: Int(GREEN))
-                }else{
-                    room445A.backgroundColor = UIColor(netHex: Int(BLUE))
-                }
-            }
-            if room.roomNumber == "445B"{
-                if checkCurrentAvailablity(room){
-                    room445B.backgroundColor = UIColor(netHex: Int(GREEN))
-                }else{
-                    room445B.backgroundColor = UIColor(netHex: Int(BLUE))
-                }
-            }
-            if room.roomNumber == "445C"{
-                if checkCurrentAvailablity(room){
-                    room445C.backgroundColor = UIColor(netHex: Int(GREEN))
-                }else{
-                    room445C.backgroundColor = UIColor(netHex: Int(BLUE))
-                }
-            }
-            if room.roomNumber == "445D"{
-                if checkCurrentAvailablity(room){
-                    room445D.backgroundColor = UIColor(netHex: Int(GREEN))
-                }else{
-                    room445D.backgroundColor = UIColor(netHex: Int(BLUE))
                 }
             }
             
