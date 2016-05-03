@@ -21,87 +21,94 @@
                             <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginbg" translatesAutoresizingMaskIntoConstraints="NO" id="KVG-ht-VHQ">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fWk-cD-7bT">
-                                <rect key="frame" x="16" y="95" width="288" height="139"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="DibnerLibraryApp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zw7-iC-XeU" customClass="materialLabel" customModule="DibnerLibraryApp" customModuleProvider="target">
-                                        <rect key="frame" x="10" y="0.0" width="269" height="39"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="32"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="691-zI-tph" customClass="materialTextFeild" customModule="DibnerLibraryApp" customModuleProvider="target">
-                                        <rect key="frame" x="44" y="59" width="200" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="gho-Df-oFh"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ohW-YR-V0M" customClass="materialTextFeild" customModule="DibnerLibraryApp" customModuleProvider="target">
-                                        <rect key="frame" x="44" y="109" width="200" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="S8g-SY-Odb"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                    </textField>
-                                </subviews>
-                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DibnerLibraryApp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zw7-iC-XeU" customClass="materialLabel" customModule="DibnerLibraryApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="79" width="280" height="39"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="32"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.45883799660000002" green="0.065486386519999995" blue="0.75826961439999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="1" height="-1"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="691-zI-tph" customClass="materialTextFeild" customModule="DibnerLibraryApp" customModuleProvider="target">
+                                <rect key="frame" x="56" y="218" width="208" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="IOd-p6-hYv"/>
+                                </constraints>
+                                <color key="textColor" red="0.43305595730000002" green="0.43356567610000002" blue="0.44134391620000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ohW-YR-V0M" customClass="materialTextFeild" customModule="DibnerLibraryApp" customModuleProvider="target">
+                                <rect key="frame" x="56" y="269" width="208" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="IJo-p4-TSH"/>
+                                </constraints>
+                                <color key="textColor" red="0.43305595730000002" green="0.43356567610000002" blue="0.44134391620000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright@2016 DibnerLibraryApp, Inc." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tR2-yr-pZs">
                                 <rect key="frame" x="48" y="543" width="256" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="w89-e5-xeR">
-                                <rect key="frame" x="113" y="471" width="94" height="91"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owz-U6-2Rw" customClass="materialButton" customModule="DibnerLibraryApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="94" height="43"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
-                                        <state key="normal" title="Sign in">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="signinBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WoW-Wz-r8n"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmO-1Z-CsO" customClass="materialButton" customModule="DibnerLibraryApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="48" width="94" height="43"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="70" id="xYb-jg-Vev"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
-                                        <state key="normal" title="Sign up">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="xYb-jg-Vev"/>
-                                            </mask>
-                                        </variation>
-                                        <connections>
-                                            <action selector="signupBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bcl-CH-TR9"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmO-1Z-CsO" customClass="materialButton" customModule="DibnerLibraryApp" customModuleProvider="target">
+                                <rect key="frame" x="113" y="399" width="94" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Lmb-PM-n7d"/>
+                                    <constraint firstAttribute="width" constant="70" id="xYb-jg-Vev"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
+                                <state key="normal" title="Sign up">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="xYb-jg-Vev"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="signupBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bcl-CH-TR9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owz-U6-2Rw" customClass="materialButton" customModule="DibnerLibraryApp" customModuleProvider="target">
+                                <rect key="frame" x="36" y="349" width="248" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="tO4-Os-D8n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
+                                <state key="normal" title="Sign in">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signinBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WoW-Wz-r8n"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.36471045060000001" green="0.052052292350000001" blue="0.6027156749" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="w89-e5-xeR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8x6-4Z-ZUt"/>
-                            <constraint firstItem="fWk-cD-7bT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="75" id="BNG-f3-Qcp"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="fWk-cD-7bT" secondAttribute="trailing" id="CKs-AK-rsO"/>
+                            <constraint firstAttribute="trailing" secondItem="zw7-iC-XeU" secondAttribute="trailing" constant="20" id="CBp-un-Omb"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KVG-ht-VHQ" secondAttribute="bottom" id="Dr3-Yj-8g4"/>
+                            <constraint firstItem="691-zI-tph" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="FBE-jj-r5w"/>
                             <constraint firstAttribute="trailingMargin" secondItem="tR2-yr-pZs" secondAttribute="trailing" id="R8D-GY-6kn"/>
+                            <constraint firstItem="691-zI-tph" firstAttribute="top" secondItem="zw7-iC-XeU" secondAttribute="bottom" constant="100" id="Rra-Zj-LGb"/>
                             <constraint firstItem="KVG-ht-VHQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="RtT-bn-Lp1"/>
-                            <constraint firstItem="fWk-cD-7bT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="S6h-WG-PkI"/>
-                            <constraint firstItem="w89-e5-xeR" firstAttribute="top" secondItem="fWk-cD-7bT" secondAttribute="bottom" constant="57" id="Tgl-aq-7nC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ohW-YR-V0M" secondAttribute="trailing" constant="40" id="UfA-jp-veL"/>
+                            <constraint firstItem="ohW-YR-V0M" firstAttribute="top" secondItem="691-zI-tph" secondAttribute="bottom" constant="16" id="WbS-H5-tFh"/>
+                            <constraint firstItem="rmO-1Z-CsO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a0a-KS-1Yz"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tR2-yr-pZs" secondAttribute="bottom" constant="8" id="aet-Cz-nl8"/>
+                            <constraint firstItem="rmO-1Z-CsO" firstAttribute="top" secondItem="owz-U6-2Rw" secondAttribute="bottom" constant="15" id="f7Y-iv-TZ7"/>
+                            <constraint firstItem="ohW-YR-V0M" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="gLt-DH-Koc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="691-zI-tph" secondAttribute="trailing" constant="40" id="h2k-ne-M2o"/>
+                            <constraint firstItem="zw7-iC-XeU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="59" id="pfK-dY-WLx"/>
+                            <constraint firstItem="owz-U6-2Rw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="r4v-Xi-kDr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="owz-U6-2Rw" secondAttribute="trailing" constant="20" id="r9L-Eb-IyN"/>
                             <constraint firstAttribute="trailing" secondItem="KVG-ht-VHQ" secondAttribute="trailing" id="s7K-ch-s6U"/>
                             <constraint firstItem="KVG-ht-VHQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tnC-Xa-gou"/>
+                            <constraint firstItem="zw7-iC-XeU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="yXC-ai-mDt"/>
+                            <constraint firstItem="owz-U6-2Rw" firstAttribute="top" secondItem="ohW-YR-V0M" secondAttribute="bottom" constant="45" id="yga-WP-Hzu"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -154,20 +161,25 @@
         <scene sceneID="YNb-zC-DYH">
             <objects>
                 <tableViewController id="Z04-ZB-fQO" customClass="MenuVC" customModule="DibnerLibraryApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="i5I-zI-RgT">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="i5I-zI-RgT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.47843137250000001" green="0.1176470588" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="separatorColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="sectionIndexBackgroundColor" red="0.47843137250000001" green="0.1176470588" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.43305595730000002" green="0.43356567610000002" blue="0.44134391620000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="separatorColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="0.43305595730000002" green="0.43356567610000002" blue="0.44134391620000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="xH6-a8-KH2">
+                            <rect key="frame" x="0.0" y="310" width="320" height="259"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.43305595730000002" green="0.43356567610000002" blue="0.44134391620000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
                         <sections>
                             <tableViewSection id="mGk-ce-Mcb">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="gDO-CJ-Z5l">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="89" id="gDO-CJ-Z5l">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gDO-CJ-Z5l" id="7hH-Z0-tw5">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="88.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DibnerLibraryApp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Af9-Fd-9Ry">
@@ -177,20 +189,20 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.47843137250000001" green="0.1176470588" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="0.43305595730000002" green="0.43356567610000002" blue="0.44134391620000002" alpha="1" colorSpace="calibratedRGB"/>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.94117647059999998" green="0.94901960780000005" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="oBt-Ir-oxN">
-                                        <rect key="frame" x="0.0" y="90" width="320" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="45" id="oBt-Ir-oxN">
+                                        <rect key="frame" x="0.0" y="89" width="320" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oBt-Ir-oxN" id="M1x-4G-waJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZAY-gy-z2z" userLabel="Make Reservation">
-                                                    <rect key="frame" x="8" y="8" width="304" height="28"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                    <rect key="frame" x="8" y="8" width="304" height="29"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                     <state key="normal" title="My Requests">
                                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
@@ -199,7 +211,7 @@
                                                     </connections>
                                                 </button>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.47843137250000001" green="0.1176470588" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="0.43305595730000002" green="0.43356567610000002" blue="0.44134391620000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstItem="ZAY-gy-z2z" firstAttribute="leading" secondItem="M1x-4G-waJ" secondAttribute="leadingMargin" id="JKD-F0-pIL"/>
                                                 <constraint firstItem="ZAY-gy-z2z" firstAttribute="trailing" secondItem="M1x-4G-waJ" secondAttribute="trailingMargin" id="Lgz-LR-5S1"/>
@@ -207,17 +219,18 @@
                                                 <constraint firstItem="ZAY-gy-z2z" firstAttribute="top" secondItem="M1x-4G-waJ" secondAttribute="topMargin" id="boP-am-coO"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="2Eg-wj-m1i">
                                         <rect key="frame" x="0.0" y="134" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2Eg-wj-m1i" id="DcQ-UA-MDk">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zon-yv-iFr">
-                                                    <rect key="frame" x="8" y="8" width="304" height="32"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                    <rect key="frame" x="8" y="8" width="304" height="33"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                     <state key="normal" title="Library Map">
                                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
@@ -226,25 +239,25 @@
                                                     </connections>
                                                 </button>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.47843137250000001" green="0.1176470588" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="0.43305595730000002" green="0.43356567610000002" blue="0.44134391620000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstItem="Zon-yv-iFr" firstAttribute="leading" secondItem="DcQ-UA-MDk" secondAttribute="leadingMargin" id="Jw1-0U-uBf"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="Zon-yv-iFr" secondAttribute="trailing" id="Wpz-CQ-uPz"/>
                                                 <constraint firstItem="Zon-yv-iFr" firstAttribute="top" secondItem="DcQ-UA-MDk" secondAttribute="topMargin" id="iks-c7-6cd"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.60511193890000003" green="0.086362931180000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ps9-FP-wqP">
                                         <rect key="frame" x="0.0" y="178" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ps9-FP-wqP" id="a7W-1M-Ho7">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0A-yH-glR">
                                                     <rect key="frame" x="8" y="8" width="304" height="28"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                     <state key="normal" title="Chatroom">
                                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
@@ -253,7 +266,7 @@
                                                     </connections>
                                                 </button>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.47843137250000001" green="0.1176470588" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="0.43305595730000002" green="0.43356567610000002" blue="0.44134391620000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstItem="o0A-yH-glR" firstAttribute="top" secondItem="a7W-1M-Ho7" secondAttribute="topMargin" id="Ox9-ZM-4O9"/>
                                                 <constraint firstItem="o0A-yH-glR" firstAttribute="leading" secondItem="a7W-1M-Ho7" secondAttribute="leadingMargin" id="Q40-H4-XvL"/>
@@ -261,18 +274,18 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="o0A-yH-glR" secondAttribute="trailing" id="mdp-X6-Smm"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.60511193890000003" green="0.086362931180000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="wRh-s8-TYO">
                                         <rect key="frame" x="0.0" y="222" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wRh-s8-TYO" id="lEC-sf-PJC">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pvv-QG-VvS">
                                                     <rect key="frame" x="8" y="8" width="304" height="28"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                     <state key="normal" title="Settings">
                                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
@@ -281,7 +294,7 @@
                                                     </connections>
                                                 </button>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.47843137250000001" green="0.1176470588" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="0.43305595730000002" green="0.43356567610000002" blue="0.44134391620000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstItem="Pvv-QG-VvS" firstAttribute="top" secondItem="lEC-sf-PJC" secondAttribute="topMargin" id="RWa-ig-9pW"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="Pvv-QG-VvS" secondAttribute="trailing" id="cu1-Hn-Gox"/>
@@ -289,18 +302,18 @@
                                                 <constraint firstItem="Pvv-QG-VvS" firstAttribute="leading" secondItem="lEC-sf-PJC" secondAttribute="leadingMargin" id="llG-DZ-kd6"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.60511193890000003" green="0.086362931180000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="A3f-KL-qFk">
                                         <rect key="frame" x="0.0" y="266" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="A3f-KL-qFk" id="YVH-db-jLN">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BgD-jy-Xjv">
                                                     <rect key="frame" x="8" y="8" width="304" height="28"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                     <state key="normal" title="Help">
                                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
@@ -309,7 +322,7 @@
                                                     </connections>
                                                 </button>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.47843137250000001" green="0.1176470588" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="0.43305595730000002" green="0.43356567610000002" blue="0.44134391620000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstItem="BgD-jy-Xjv" firstAttribute="top" secondItem="YVH-db-jLN" secondAttribute="topMargin" id="67d-Qi-sj7"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="BgD-jy-Xjv" secondAttribute="bottom" id="V3R-MX-brY"/>
@@ -317,7 +330,7 @@
                                                 <constraint firstItem="BgD-jy-Xjv" firstAttribute="leading" secondItem="YVH-db-jLN" secondAttribute="leadingMargin" id="vz2-PC-ty8"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.47843137250000001" green="0.80784313730000001" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
