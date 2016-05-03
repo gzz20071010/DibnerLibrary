@@ -77,7 +77,7 @@ class MapVC: UIViewController {
                     }
                     //print("====")
                     //print (dates.count)
-                    let room = Room(number: Int(snap.key)!, reservations: dates)
+                    let room = Room(number: "\(snap.key)", reservations: dates)
                     self.rooms.append(room)
                 }
             }
@@ -174,68 +174,39 @@ class MapVC: UIViewController {
 //  
 //        
         for room in rooms{
-            if room.roomNumber == 401{
+            if room.roomNumber == "401"{
                 if checkCurrentAvailablity(room){
                     room401.backgroundColor = UIColor(netHex: Int(GREEN))
                 }else{
                     room401.backgroundColor = UIColor(netHex: Int(BLUE))
                 }
             }
-            if room.roomNumber == 402{
+            if room.roomNumber == "402"{
                 if checkCurrentAvailablity(room){
                     room402.backgroundColor = UIColor(netHex: Int(GREEN))
                 }else{
                     room402.backgroundColor = UIColor(netHex: Int(BLUE))
                 }
             }
-            if room.roomNumber == 403{
+            if room.roomNumber == "403"{
                 if checkCurrentAvailablity(room){
                     room403.backgroundColor = UIColor(netHex: Int(GREEN))
                 }else{
                     room403.backgroundColor = UIColor(netHex: Int(BLUE))
                 }
             }
-            if room.roomNumber == 404{
+            if room.roomNumber == "404"{
                 if checkCurrentAvailablity(room){
                     room404.backgroundColor = UIColor(netHex: Int(GREEN))
                 }else{
                     room404.backgroundColor = UIColor(netHex: Int(BLUE))
                 }
             }
-            if room.roomNumber == 405{
+            if room.roomNumber == "405"{
                 if checkCurrentAvailablity(room){
                     room405.backgroundColor = UIColor(netHex: Int(GREEN))
                 }else{
                     room405.backgroundColor = UIColor(netHex: Int(BLUE))
-                }
-            }
-            if room.roomNumber == 406{
-                if checkCurrentAvailablity(room){
-                    room406.backgroundColor = UIColor(netHex: Int(GREEN))
-                }else{
-                    room406.backgroundColor = UIColor(netHex: Int(BLUE))
-                }
-            }
-
-            if room.roomNumber == 407{
-                if checkCurrentAvailablity(room){
-                    room407.backgroundColor = UIColor(netHex: Int(GREEN))
-                }else{
-                    room407.backgroundColor = UIColor(netHex: Int(BLUE))
-                }
-            }
-            if room.roomNumber == 409{
-                if checkCurrentAvailablity(room){
-                    room409.backgroundColor = UIColor(netHex: Int(GREEN))
-                }else{
-                    room409.backgroundColor = UIColor(netHex: Int(BLUE))
-                }
-            }
-            if room.roomNumber == 410{
-                if checkCurrentAvailablity(room){
-                    room410.backgroundColor = UIColor(netHex: Int(GREEN))
-                }else{
-                    room410.backgroundColor = UIColor(netHex: Int(BLUE))
                 }
             }
         }

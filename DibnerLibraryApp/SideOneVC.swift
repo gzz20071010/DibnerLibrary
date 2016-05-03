@@ -21,6 +21,11 @@ class SideOneVC: UIViewController {
     @IBOutlet weak var dateLbl: UILabel!
     @IBOutlet weak var roomNumber: UILabel!
     
+    var roomNumberStr:String!
+    var beginStr = String()
+    var hasReservation = false
+    //var endStr = String()
+    
     //var reservations = Dictionary<String,AnyObject>()
     var reservations = [String]()
 
@@ -40,58 +45,60 @@ class SideOneVC: UIViewController {
         self.navigationItem.leftBarButtonItem?.tintColor = UIColor.whiteColor()
         self.navigationController?.navigationBar.translucent = false
 
-        
+
     }
 
     override func viewDidAppear(animated: Bool) {
         var beginTime = [String]()
         var endTime = [String]()
-        var roomNumberStr:String!
-       // var beginStr = String()
-       // var endStr = String()
+        
         
         let resRef = ref.childByAppendingPath("users").childByAppendingPath("\(UID)").childByAppendingPath("reservations")
-
+        
         resRef.observeEventType(.Value, withBlock:{snapshot in
-        self.reservations = [String]()
-        if let snapshots = snapshot.children.allObjects as? [FDataSnapshot]{
-            for snap in snapshots{
-                print("SNAP: \(snap)")
-                // let value = snap.value
-                self.reservations.append("\(snap.key)")
-                roomNumberStr = snap.key
-                if let time = snap.value as? Dictionary<String,String> {
-                    for (key, value) in time{
-                        if let beginStr = key as? String{
-                            beginTime = parseDate(beginStr)
-                        }
-                        if let endStr = value as? String{
-                            endTime = parseDate(endStr)
+            self.reservations = [String]()
+            if let snapshots = snapshot.children.allObjects as? [FDataSnapshot]{
+                for snap in snapshots{
+                    print("SNAP: \(snap)")
+                    // let value = snap.value
+                    self.reservations.append("\(snap.key)")
+                    self.roomNumberStr = snap.key
+                    if let time = snap.value as? Dictionary<String,String> {
+                        for (key, value) in time{
+                            beginTime = parseDate(key)
+                            endTime = parseDate(value)
+                            self.beginStr = key
                         }
                     }
                 }
+                
+                if beginTime.count != 0 {
+                    self.roomNumber.text = "           Room Number: \(self.roomNumberStr)"
+                    self.beginTime.text = "              Begin Time: \(beginTime[1]):\(beginTime[2])"
+                    self.endTime.text = "              End Time: \(endTime[1]):\(endTime[2])"
+                    self.dateLbl.text = "              Date: \(beginTime[0])"
+                    self.hasReservation = true
+                }else{
+                    self.roomNumber.text = "           Room Number: "
+                    self.beginTime.text = "              Begin Time: "
+                    self.endTime.text = "              End Time: "
+                    self.dateLbl.text = "              Date: "
+                }
+                
+                //print("self.reservation: ", self.reservations)
+                //  self.tableView.reloadData()
+                
+                
+                //            if self.reservations.count == 0 {
+                //                self.tableView.hidden = true
+                //            }else{
+                //                self.tableView.hidden = false
+                //            }
             }
-            
-            if beginTime.count != 0 {
-                self.roomNumber.text = "           Room Number: \(roomNumberStr)"
-                self.beginTime.text = "              Begin Time: \(beginTime[1]):\(beginTime[2])"
-                self.endTime.text = "              End Time: \(endTime[1]):\(endTime[2])"
-                self.dateLbl.text = "              Date: \(beginTime[2])"
-            }
-            
-            //print("self.reservation: ", self.reservations)
-          //  self.tableView.reloadData()
-            
-            
-//            if self.reservations.count == 0 {
-//                self.tableView.hidden = true
-//            }else{
-//                self.tableView.hidden = false
-//            }
-        }
         })
-
+        
     }
+
 //    
 //    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
 //        return 1
@@ -114,6 +121,40 @@ class SideOneVC: UIViewController {
 //    }
     
     @IBAction func onCancelPressed(sender: AnyObject) {
+        
+        if hasReservation {
+            let rmRef = ref.childByAppendingPath("users").childByAppendingPath(UID!).childByAppendingPath("reservations").childByAppendingPath("\(roomNumberStr)")
+            rmRef.removeValue()
+        
+            let rmRefLib = ref.childByAppendingPath("library").childByAppendingPath("\(roomNumberStr)").childByAppendingPath(beginStr)
+            rmRefLib.removeValue()
+        
+            let roomRef = ref.childByAppendingPath("library")
+            roomRef.updateChildValues(["\(roomNumberStr)":true])
+            
+            self.roomNumber.text = "           Room Number: "
+            self.beginTime.text = "              Begin Time: "
+            self.endTime.text = "              End Time: "
+            self.dateLbl.text = "              Date: "
+            
+            hasReservation = false
+          
+            self.showAlert("Notification", msg: "Reservation Canceled")
+            self.viewDidLoad()
+            self.viewDidAppear(true)
+            self.roomNumber.text = "           Room Number: "
+            self.beginTime.text = "              Begin Time: "
+            self.endTime.text = "              End Time: "
+            self.dateLbl.text = "              Date: "
+        }
+        
+    }
+    
+    func showAlert(title: String, msg: String){
+        let alert = UIAlertController(title: title, message: msg, preferredStyle: .Alert)
+        let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+        alert.addAction(action)
+        presentViewController(alert, animated: true, completion: nil)
     }
     
 }

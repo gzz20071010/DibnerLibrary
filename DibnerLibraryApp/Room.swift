@@ -10,12 +10,12 @@ import Foundation
 
 
 class Room{
-    private var _roomNumber: Int!
+    private var _roomNumber: String!
     private var _reservations: [Date]!
     
-    var roomNumber: Int{
+    var roomNumber: String{
         if _roomNumber == nil{
-            _roomNumber = 0
+            _roomNumber = ""
         }
         return _roomNumber
     }
@@ -27,7 +27,7 @@ class Room{
         return _reservations
     }
     
-    init(number: Int, reservations: [Date]){
+    init(number: String, reservations: [Date]){
         self._reservations = reservations
         self._roomNumber = number
     }

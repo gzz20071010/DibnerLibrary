@@ -159,7 +159,7 @@ class AddPlantVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                     }
                     //print("====")
                     //print (dates.count)
-                    let room = Room(number: Int(snap.key)!, reservations: dates)
+                    let room = Room(number: "\(snap.key)", reservations: dates)
                     self.rooms.append(room)
                    // self.reservations.append("\(snap.key)")
                 }
