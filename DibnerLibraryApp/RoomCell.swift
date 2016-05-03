@@ -23,5 +23,9 @@ class RoomCell: UITableViewCell {
             roomNumbLb.text = "Room# \(x)"
         }
     }
+    
+    func configureCell(str:String){
+        roomNumbLb.text = str
+    }
   
 }

@@ -134,6 +134,8 @@ class AddPlantVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     override func viewDidAppear(animated: Bool) {
         
+        let computerList = ["1","2","3","4","5","6","7","8"]
+        
         let resRef = ref.childByAppendingPath("library")
         
         resRef.observeEventType(.Value, withBlock:{snapshot in
@@ -160,7 +162,16 @@ class AddPlantVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                     //print("====")
                     //print (dates.count)
                     let room = Room(number: "\(snap.key)", reservations: dates)
-                    self.rooms.append(room)
+                    
+                    var isLaptop = false
+                    for x in computerList{
+                        if room.roomNumber == x{
+                            isLaptop = true
+                        }
+                    }
+                    if !isLaptop {
+                        self.rooms.append(room)
+                    }
                    // self.reservations.append("\(snap.key)")
                 }
                 //print("====")
@@ -181,7 +192,11 @@ class AddPlantVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCellWithIdentifier("RoomCell", forIndexPath: indexPath) as? RoomCell{
             let room = availiableRooms[indexPath.row]
-            cell.roomNumbLb.text = "\(room.roomNumber)"
+            if room.roomNumber == "445" || room.roomNumber == "445A" || room.roomNumber == "445B" || room.roomNumber == "445C" || room.roomNumber == "445D"{
+                cell.roomNumbLb.text = "\(room.roomNumber) [Four Person Room]"
+            }else{
+                cell.roomNumbLb.text = "\(room.roomNumber) [Two Person Room]"
+            }
             return cell
         }
         return UITableViewCell()
@@ -189,6 +204,10 @@ class AddPlantVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
  
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.roomNumber.text = availiableRooms[indexPath.row].roomNumber
     }
 
     @IBAction func onDropDownBtnPressed(sender: AnyObject) {

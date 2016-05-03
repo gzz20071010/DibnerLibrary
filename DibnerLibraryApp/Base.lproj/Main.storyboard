@@ -445,11 +445,11 @@
                         <viewControllerLayoutGuide type="bottom" id="tVD-Jb-PDe"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="cPA-KY-jSo">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ebl-cj-d4o" customClass="materialView" customModule="DibnerLibraryApp" customModuleProvider="target">
-                                <rect key="frame" x="10" y="10" width="300" height="484"/>
+                                <rect key="frame" x="10" y="10" width="300" height="440"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="           Room Number:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8s-1N-uRD" customClass="materialLabel" customModule="DibnerLibraryApp" customModuleProvider="target">
                                         <rect key="frame" x="8" y="15" width="284" height="70"/>
@@ -504,7 +504,7 @@
                                         </variation>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z01-Wt-Wy1" customClass="materialButton" customModule="DibnerLibraryApp" customModuleProvider="target">
-                                        <rect key="frame" x="8" y="409" width="284" height="57"/>
+                                        <rect key="frame" x="8" y="365" width="284" height="57"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="57" id="ncX-Cx-Db9"/>
@@ -546,7 +546,7 @@
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cancel" translatesAutoresizingMaskIntoConstraints="NO" id="73L-4W-f07">
-                                        <rect key="frame" x="13" y="418" width="40" height="40"/>
+                                        <rect key="frame" x="13" y="374" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="VoI-LC-hCa"/>
                                             <constraint firstAttribute="width" constant="40" id="m0R-e3-hBf"/>
@@ -642,7 +642,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GHT-4v-36j">
-                                <rect key="frame" x="16" y="20" width="210" height="68"/>
+                                <rect key="frame" x="16" y="30" width="210" height="68"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="KCb-Tg-cTZ">
                                         <rect key="frame" x="0.0" y="0.0" width="210" height="30"/>
@@ -768,13 +768,13 @@
                                 </subviews>
                             </stackView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Room Number or Laptop Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jax-rw-Wa5" customClass="materialTextFeild" customModule="DibnerLibraryApp" customModuleProvider="target">
-                                <rect key="frame" x="16" y="96" width="288" height="30"/>
+                                <rect key="frame" x="16" y="116" width="288" height="30"/>
                                 <color key="textColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="myj-7Y-ShG">
-                                <rect key="frame" x="16" y="134" width="288" height="224"/>
+                                <rect key="frame" x="16" y="154" width="288" height="194"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RoomCell" id="yTv-SH-tUt" customClass="RoomCell" customModule="DibnerLibraryApp" customModuleProvider="target">
@@ -784,10 +784,10 @@
                                             <rect key="frame" x="0.0" y="0.0" width="288" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tSZ-mO-q4m">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tSZ-mO-q4m" customClass="materialLabel" customModule="DibnerLibraryApp" customModuleProvider="target">
                                                     <rect key="frame" x="8" y="8" width="272" height="27.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" red="0.41176470590000003" green="0.1019607843" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -805,7 +805,7 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBn-TM-nKR" customClass="materialButton" customModule="DibnerLibraryApp" customModuleProvider="target">
-                                <rect key="frame" x="234" y="20" width="70" height="68"/>
+                                <rect key="frame" x="234" y="30" width="70" height="68"/>
                                 <color key="backgroundColor" red="0.47843137250000001" green="0.1176470588" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="Opy-RD-zfA"/>
@@ -826,20 +826,21 @@
                             <constraint firstItem="srq-LW-8kk" firstAttribute="trailing" secondItem="zlf-4i-2IM" secondAttribute="trailingMargin" id="89T-yr-C3r"/>
                             <constraint firstAttribute="trailingMargin" secondItem="OBn-TM-nKR" secondAttribute="trailing" id="8le-1B-0CP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="jax-rw-Wa5" secondAttribute="trailing" id="9OJ-HF-a68"/>
-                            <constraint firstItem="OBn-TM-nKR" firstAttribute="top" secondItem="hAo-NX-Vm2" secondAttribute="bottom" constant="20" id="Bq1-6W-MtC"/>
+                            <constraint firstItem="OBn-TM-nKR" firstAttribute="top" secondItem="hAo-NX-Vm2" secondAttribute="bottom" constant="30" id="Bq1-6W-MtC"/>
+                            <constraint firstItem="myj-7Y-ShG" firstAttribute="centerX" secondItem="zlf-4i-2IM" secondAttribute="centerX" id="Cev-gg-rYY"/>
                             <constraint firstItem="OBn-TM-nKR" firstAttribute="leading" secondItem="GHT-4v-36j" secondAttribute="trailing" constant="8" id="Ftw-2i-EaV"/>
                             <constraint firstItem="srq-LW-8kk" firstAttribute="leading" secondItem="zlf-4i-2IM" secondAttribute="leadingMargin" id="ORP-QO-FhC"/>
                             <constraint firstItem="GHT-4v-36j" firstAttribute="leading" secondItem="zlf-4i-2IM" secondAttribute="leadingMargin" id="S8A-b0-guN"/>
-                            <constraint firstItem="srq-LW-8kk" firstAttribute="top" secondItem="myj-7Y-ShG" secondAttribute="bottom" constant="8" id="SKn-nw-irC"/>
+                            <constraint firstItem="srq-LW-8kk" firstAttribute="top" secondItem="myj-7Y-ShG" secondAttribute="bottom" constant="18" id="SKn-nw-irC"/>
                             <constraint firstItem="myj-7Y-ShG" firstAttribute="leading" secondItem="zlf-4i-2IM" secondAttribute="leadingMargin" id="TLe-0n-eJ2"/>
-                            <constraint firstItem="GHT-4v-36j" firstAttribute="top" secondItem="hAo-NX-Vm2" secondAttribute="bottom" constant="20" id="Ycs-fx-6h4"/>
+                            <constraint firstItem="GHT-4v-36j" firstAttribute="top" secondItem="hAo-NX-Vm2" secondAttribute="bottom" constant="30" id="Ycs-fx-6h4"/>
                             <constraint firstItem="myj-7Y-ShG" firstAttribute="top" secondItem="jax-rw-Wa5" secondAttribute="bottom" constant="8" id="YtX-sE-MCF"/>
                             <constraint firstItem="jax-rw-Wa5" firstAttribute="leading" secondItem="zlf-4i-2IM" secondAttribute="leadingMargin" id="eRt-Dm-jfG"/>
                             <constraint firstItem="srq-LW-8kk" firstAttribute="leading" secondItem="zlf-4i-2IM" secondAttribute="leadingMargin" id="hOy-aF-f2U"/>
                             <constraint firstAttribute="trailingMargin" secondItem="srq-LW-8kk" secondAttribute="trailing" id="lQG-51-soO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="GHT-4v-36j" secondAttribute="trailing" id="nre-I6-MjZ"/>
-                            <constraint firstItem="jax-rw-Wa5" firstAttribute="top" secondItem="OBn-TM-nKR" secondAttribute="bottom" constant="8" id="p3U-XS-pqj"/>
-                            <constraint firstItem="jax-rw-Wa5" firstAttribute="top" secondItem="GHT-4v-36j" secondAttribute="bottom" constant="8" id="pu6-ZG-ihN"/>
+                            <constraint firstItem="jax-rw-Wa5" firstAttribute="top" secondItem="OBn-TM-nKR" secondAttribute="bottom" constant="18" id="p3U-XS-pqj"/>
+                            <constraint firstItem="jax-rw-Wa5" firstAttribute="top" secondItem="GHT-4v-36j" secondAttribute="bottom" constant="18" id="pu6-ZG-ihN"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -1426,7 +1427,7 @@
         <image name="time" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="nWW-Cl-ve8"/>
         <segue reference="8NJ-rp-JDi"/>
+        <segue reference="SC8-hF-3NB"/>
     </inferredMetricsTieBreakers>
 </document>
