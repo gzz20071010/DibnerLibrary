@@ -248,6 +248,9 @@
                                                     <state key="normal" title="Chatroom">
                                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <segue destination="m3d-vU-j3b" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="kth-KI-bnD"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" red="0.47843137250000001" green="0.1176470588" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -1082,7 +1085,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sUS-KZ-cEA">
-                                <rect key="frame" x="24" y="409" width="180" height="33"/>
+                                <rect key="frame" x="24" y="453" width="180" height="33"/>
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PbF-E4-6Ze">
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="33"/>
@@ -1119,7 +1122,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="CWd-WM-mYx">
-                                <rect key="frame" x="24" y="461" width="180" height="33"/>
+                                <rect key="frame" x="24" y="505" width="180" height="33"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJn-qH-Flq">
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="33"/>
@@ -1155,20 +1158,26 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Laptops" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="650-aI-cgr">
-                                <rect key="frame" x="16" y="374.5" width="66.5" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Laptop Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="650-aI-cgr">
+                                <rect key="frame" x="16" y="419" width="118.5" height="20.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" red="0.94117647059999998" green="0.94901960780000005" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.41176470590000003" green="0.1019607843" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rooms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rVe-qi-6Xp">
-                                <rect key="frame" x="16" y="80" width="58" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Room Status (3rd Floor)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rVe-qi-6Xp">
+                                <rect key="frame" x="16" y="80" width="202" height="20.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" red="0.94117647059999998" green="0.94901960780000005" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.41176470590000003" green="0.1019607843" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Room Status (4th Floor)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEu-ob-pw5">
+                                <rect key="frame" x="16" y="330" width="202" height="20.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.41176470590000003" green="0.1019607843" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="CWd-WM-mYx" firstAttribute="top" secondItem="sUS-KZ-cEA" secondAttribute="bottom" constant="19" id="0ne-ym-H6c"/>
                             <constraint firstItem="UkY-Ze-bqg" firstAttribute="leading" secondItem="Svt-8r-eMT" secondAttribute="leadingMargin" constant="8" id="1Ox-SU-CB7"/>
@@ -1176,7 +1185,7 @@
                             <constraint firstItem="rVe-qi-6Xp" firstAttribute="top" secondItem="bHU-iV-gbp" secondAttribute="bottom" constant="16" id="IxL-h4-u2g"/>
                             <constraint firstItem="CWd-WM-mYx" firstAttribute="leading" secondItem="Svt-8r-eMT" secondAttribute="leadingMargin" constant="8" id="Ngt-7Z-yXa"/>
                             <constraint firstItem="650-aI-cgr" firstAttribute="leading" secondItem="Svt-8r-eMT" secondAttribute="leadingMargin" id="Rjj-t6-tIo"/>
-                            <constraint firstItem="9Od-jX-3rM" firstAttribute="top" secondItem="CWd-WM-mYx" secondAttribute="bottom" constant="74" id="aML-fD-6XY"/>
+                            <constraint firstItem="9Od-jX-3rM" firstAttribute="top" secondItem="CWd-WM-mYx" secondAttribute="bottom" constant="30" id="aML-fD-6XY"/>
                             <constraint firstItem="sUS-KZ-cEA" firstAttribute="leading" secondItem="Svt-8r-eMT" secondAttribute="leadingMargin" constant="8" id="pSy-vt-ddM"/>
                             <constraint firstItem="rVe-qi-6Xp" firstAttribute="leading" secondItem="Svt-8r-eMT" secondAttribute="leadingMargin" id="wGm-bQ-DVY"/>
                             <constraint firstItem="VDs-Vs-fHJ" firstAttribute="top" secondItem="bHU-iV-gbp" secondAttribute="bottom" constant="53" id="wPx-FW-TaO"/>
@@ -1188,7 +1197,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="axQ-yx-bi3">
                         <barButtonItem key="leftBarButtonItem" image="menu" id="EU1-GX-2U2">
-                            <color key="tintColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -1283,6 +1292,45 @@
                 </navigationItem>
             </objects>
             <point key="canvasLocation" x="1511" y="1297"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aJe-SM-Ffr">
+            <objects>
+                <viewController id="fN0-Eh-KqR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="za3-DC-Ueg"/>
+                        <viewControllerLayoutGuide type="bottom" id="0mv-rw-ANl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="y20-Tn-pld">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jgI-sT-rRN"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="naa-ao-e76" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2070" y="1970"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="c9U-xY-tD6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="m3d-vU-j3b" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="x4C-8c-95O">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fN0-Eh-KqR" kind="relationship" relationship="rootViewController" id="xHj-sa-GK8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ddY-Bf-jjK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1651" y="1970"/>
         </scene>
     </scenes>
     <resources>
