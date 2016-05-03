@@ -72,11 +72,13 @@ class SideOneVC: UIViewController {
                 }
             }
             
-            self.roomNumber.text = "           Room Number: \(roomNumberStr)"
-            self.beginTime.text = "              Begin Time: \(beginTime[1]):\(beginTime[2])"
-            self.endTime.text = "              End Time: \(endTime[1]):\(endTime[2])"
-            self.dateLbl.text = "              Date: \(beginTime[2])"
-                
+            if beginTime.count != 0 {
+                self.roomNumber.text = "           Room Number: \(roomNumberStr)"
+                self.beginTime.text = "              Begin Time: \(beginTime[1]):\(beginTime[2])"
+                self.endTime.text = "              End Time: \(endTime[1]):\(endTime[2])"
+                self.dateLbl.text = "              Date: \(beginTime[2])"
+            }
+            
             //print("self.reservation: ", self.reservations)
           //  self.tableView.reloadData()
             
