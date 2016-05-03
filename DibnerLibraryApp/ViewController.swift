@@ -113,10 +113,18 @@ class ViewController: UIViewController {
                     print(error)
                 } else {
                     let uid = result["uid"] as? String
+                    self.showAlert("Notification", msg: "Successfully created user account")
                     print("Successfully created user account with uid: \(uid)")
                 }
         })
         
+    }
+    
+    func showAlert(title: String, msg: String){
+        let alert = UIAlertController(title: title, message: msg, preferredStyle: .Alert)
+        let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+        alert.addAction(action)
+        presentViewController(alert, animated: true, completion: nil)
     }
 }
 
