@@ -11,16 +11,25 @@ import Firebase
 
 class MapVC: UIViewController {
     
-    @IBOutlet weak var room401: UIButton!
-    @IBOutlet weak var room402: UIButton!
-    @IBOutlet weak var room403: UIButton!
-    @IBOutlet weak var room410: UIButton!
-    @IBOutlet weak var room404: UIButton!
-    @IBOutlet weak var room411: UIButton!
-    @IBOutlet weak var room405: UIButton!
-    @IBOutlet weak var room406: UIButton!
-    @IBOutlet weak var room407: UIButton!
-    @IBOutlet weak var room409: UIButton!
+    @IBOutlet weak var room432: UIButton!
+    @IBOutlet weak var room434: UIButton!
+    @IBOutlet weak var room445: UIButton!
+    @IBOutlet weak var room445A: UIButton!
+    @IBOutlet weak var room445B: UIButton!
+    @IBOutlet weak var room445C: UIButton!
+    @IBOutlet weak var room445D: UIButton!
+    
+    @IBOutlet weak var room327: UIButton!
+    @IBOutlet weak var room328: UIButton!
+    @IBOutlet weak var room335: UIButton!
+    @IBOutlet weak var room330: UIButton!
+    @IBOutlet weak var room329: UIButton!
+    @IBOutlet weak var room334: UIButton!
+    @IBOutlet weak var room331: UIButton!
+    @IBOutlet weak var room332: UIButton!
+    @IBOutlet weak var room333: UIButton!
+    
+    
     @IBOutlet weak var laptop1: UIButton!
     @IBOutlet weak var laptop2: UIButton!
     @IBOutlet weak var laptop3: UIButton!
@@ -41,7 +50,14 @@ class MapVC: UIViewController {
             menuButton.target = self.revealViewController()
             menuButton.action = "revealToggle:"
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+            
+            
         }
+        
+        self.navigationItem.title = "Status Map"
+        self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+        self.navigationController?.navigationBar.translucent = false
+
         // Do any additional setup after loading the view.
         //print(timeStr
 
@@ -130,85 +146,123 @@ class MapVC: UIViewController {
             laptop8.backgroundColor = UIColor(netHex: Int(BLUE))
         }
 
-//        //rooms
-//        if libraryStatus["401"] as! Bool == true {
-//            room401.backgroundColor = UIColor(netHex: Int(GREEN))
-//        }else if libraryStatus["401"] as! Bool == false {
-//            room401.backgroundColor = UIColor(netHex: Int(BLUE))
-//        }
-//        if libraryStatus["402"] as! Bool == true {
-//            room402.backgroundColor = UIColor(netHex: Int(GREEN))
-//        }else if libraryStatus["402"] as! Bool == false {
-//            room402.backgroundColor = UIColor(netHex: Int(BLUE))
-//        }
-//        if libraryStatus["403"] as! Bool == true {
-//            room403.backgroundColor = UIColor(netHex: Int(GREEN))
-//        }else if libraryStatus["403"] as! Bool == false {
-//            room403.backgroundColor = UIColor(netHex: Int(BLUE))
-//        }
-//        if libraryStatus["404"] as! Bool == true {
-//            room404.backgroundColor = UIColor(netHex: Int(GREEN))
-//        }else if libraryStatus["404"] as! Bool == false {
-//            room404.backgroundColor = UIColor(netHex: Int(BLUE))
-//        }
-//        if libraryStatus["405"] as! Bool == true {
-//            room405.backgroundColor = UIColor(netHex: Int(GREEN))
-//        }else if libraryStatus["405"] as! Bool == false {
-//            room405.backgroundColor = UIColor(netHex: Int(BLUE))
-//        }
-//        if libraryStatus["406"] as! Bool == true {
-//            room406.backgroundColor = UIColor(netHex: Int(GREEN))
-//        }else if libraryStatus["406"] as! Bool == false {
-//            room406.backgroundColor = UIColor(netHex: Int(BLUE))
-//        }
-//        if libraryStatus["407"] as! Bool == true {
-//            room407.backgroundColor = UIColor(netHex: Int(GREEN))
-//        }else if libraryStatus["407"] as! Bool == false {
-//            room407.backgroundColor = UIColor(netHex: Int(BLUE))
-//        }
-//        if libraryStatus["410"] as! Bool == true {
-//            room410.backgroundColor = UIColor(netHex: Int(GREEN))
-//        }else if libraryStatus["410"] as! Bool == false {
-//            room410.backgroundColor = UIColor(netHex: Int(BLUE))
-//        }
-//  
-//        
+     
         for room in rooms{
-            if room.roomNumber == "401"{
+            if room.roomNumber == "327"{
                 if checkCurrentAvailablity(room){
-                    room401.backgroundColor = UIColor(netHex: Int(GREEN))
+                    room327.backgroundColor = UIColor(netHex: Int(GREEN))
                 }else{
-                    room401.backgroundColor = UIColor(netHex: Int(BLUE))
+                    room327.backgroundColor = UIColor(netHex: Int(BLUE))
                 }
             }
-            if room.roomNumber == "402"{
+            if room.roomNumber == "328"{
                 if checkCurrentAvailablity(room){
-                    room402.backgroundColor = UIColor(netHex: Int(GREEN))
+                    room328.backgroundColor = UIColor(netHex: Int(GREEN))
                 }else{
-                    room402.backgroundColor = UIColor(netHex: Int(BLUE))
+                    room328.backgroundColor = UIColor(netHex: Int(BLUE))
                 }
             }
-            if room.roomNumber == "403"{
+            if room.roomNumber == "329"{
                 if checkCurrentAvailablity(room){
-                    room403.backgroundColor = UIColor(netHex: Int(GREEN))
+                    room329.backgroundColor = UIColor(netHex: Int(GREEN))
                 }else{
-                    room403.backgroundColor = UIColor(netHex: Int(BLUE))
+                    room329.backgroundColor = UIColor(netHex: Int(BLUE))
                 }
             }
-            if room.roomNumber == "404"{
+            if room.roomNumber == "330"{
                 if checkCurrentAvailablity(room){
-                    room404.backgroundColor = UIColor(netHex: Int(GREEN))
+                    room330.backgroundColor = UIColor(netHex: Int(GREEN))
                 }else{
-                    room404.backgroundColor = UIColor(netHex: Int(BLUE))
+                    room330.backgroundColor = UIColor(netHex: Int(BLUE))
                 }
             }
-            if room.roomNumber == "405"{
+            if room.roomNumber == "331"{
                 if checkCurrentAvailablity(room){
-                    room405.backgroundColor = UIColor(netHex: Int(GREEN))
+                    room331.backgroundColor = UIColor(netHex: Int(GREEN))
                 }else{
-                    room405.backgroundColor = UIColor(netHex: Int(BLUE))
+                    room331.backgroundColor = UIColor(netHex: Int(BLUE))
                 }
             }
+            if room.roomNumber == "332"{
+                if checkCurrentAvailablity(room){
+                    room332.backgroundColor = UIColor(netHex: Int(GREEN))
+                }else{
+                    room332.backgroundColor = UIColor(netHex: Int(BLUE))
+                }
+            }
+            if room.roomNumber == "333"{
+                if checkCurrentAvailablity(room){
+                    room333.backgroundColor = UIColor(netHex: Int(GREEN))
+                }else{
+                    room333.backgroundColor = UIColor(netHex: Int(BLUE))
+                }
+            }
+            if room.roomNumber == "334"{
+                if checkCurrentAvailablity(room){
+                    room334.backgroundColor = UIColor(netHex: Int(GREEN))
+                }else{
+                    room334.backgroundColor = UIColor(netHex: Int(BLUE))
+                }
+            }
+            if room.roomNumber == "335"{
+                if checkCurrentAvailablity(room){
+                    room335.backgroundColor = UIColor(netHex: Int(GREEN))
+                }else{
+                    room335.backgroundColor = UIColor(netHex: Int(BLUE))
+                }
+            }
+            if room.roomNumber == "432"{
+                if checkCurrentAvailablity(room){
+                    room432.backgroundColor = UIColor(netHex: Int(GREEN))
+                }else{
+                    room432.backgroundColor = UIColor(netHex: Int(BLUE))
+                }
+            }
+            
+            if room.roomNumber == "434"{
+                if checkCurrentAvailablity(room){
+                    room434.backgroundColor = UIColor(netHex: Int(GREEN))
+                }else{
+                    room434.backgroundColor = UIColor(netHex: Int(BLUE))
+                }
+            }
+            
+            if room.roomNumber == "445"{
+                if checkCurrentAvailablity(room){
+                    room445.backgroundColor = UIColor(netHex: Int(GREEN))
+                }else{
+                    room445.backgroundColor = UIColor(netHex: Int(BLUE))
+                }
+            }
+            if room.roomNumber == "445A"{
+                if checkCurrentAvailablity(room){
+                    room445A.backgroundColor = UIColor(netHex: Int(GREEN))
+                }else{
+                    room445A.backgroundColor = UIColor(netHex: Int(BLUE))
+                }
+            }
+            if room.roomNumber == "445B"{
+                if checkCurrentAvailablity(room){
+                    room445B.backgroundColor = UIColor(netHex: Int(GREEN))
+                }else{
+                    room445B.backgroundColor = UIColor(netHex: Int(BLUE))
+                }
+            }
+            if room.roomNumber == "445C"{
+                if checkCurrentAvailablity(room){
+                    room445C.backgroundColor = UIColor(netHex: Int(GREEN))
+                }else{
+                    room445C.backgroundColor = UIColor(netHex: Int(BLUE))
+                }
+            }
+            if room.roomNumber == "445D"{
+                if checkCurrentAvailablity(room){
+                    room445D.backgroundColor = UIColor(netHex: Int(GREEN))
+                }else{
+                    room445D.backgroundColor = UIColor(netHex: Int(BLUE))
+                }
+            }
+            
         }
     }
 
