@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -379,38 +380,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pFZ-R9-EEh">
-                                <rect key="frame" x="24" y="100" width="272" height="31"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hAa-4T-JLQ" customClass="materialView" customModule="DibnerLibraryApp" customModuleProvider="target">
+                                <rect key="frame" x="8" y="84" width="302" height="70"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uMW-fD-bhR" customClass="materialView" customModule="DibnerLibraryApp" customModuleProvider="target">
+                                <rect key="frame" x="8" y="267" width="302" height="89"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Auto-Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04C-SP-r2F">
-                                        <rect key="frame" x="0.0" y="0.0" width="223" height="31"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ngh-7q-Mbk">
-                                        <rect key="frame" x="223" y="0.0" width="51" height="31"/>
-                                        <color key="onTintColor" red="0.94117647059999998" green="0.94901960780000005" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
-                                    </switch>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihq-Cf-lKU" customClass="materialButton" customModule="DibnerLibraryApp" customModuleProvider="target">
+                                        <rect key="frame" x="128" y="16" width="46" height="22"/>
+                                        <state key="normal" title="Edit"/>
+                                    </button>
                                 </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ImT-Jf-pJ0">
-                                <rect key="frame" x="24" y="148" width="272" height="31"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r3d-BN-2ET" customClass="materialView" customModule="DibnerLibraryApp" customModuleProvider="target">
+                                <rect key="frame" x="8" y="178" width="302" height="81"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reminder On/Off" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQP-JG-ipt">
-                                        <rect key="frame" x="0.0" y="0.0" width="223" height="31"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wcZ-hf-b9N">
-                                        <rect key="frame" x="223" y="0.0" width="51" height="31"/>
-                                        <color key="onTintColor" red="0.94117647059999998" green="0.94901960780000005" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
-                                    </switch>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMK-qq-uMW" customClass="materialButton" customModule="DibnerLibraryApp" customModuleProvider="target">
+                                        <rect key="frame" x="153" y="14" width="46" height="22"/>
+                                        <state key="normal" title="Edit"/>
+                                    </button>
                                 </subviews>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeZ-b6-JMo">
-                                <rect key="frame" x="24" y="204" width="272" height="32"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeZ-b6-JMo" customClass="materialButton" customModule="DibnerLibraryApp" customModuleProvider="target">
+                                <rect key="frame" x="24" y="516" width="272" height="32"/>
                                 <color key="backgroundColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Log Out">
@@ -420,19 +415,86 @@
                                     <action selector="onLogOutPressed:" destination="T80-mw-wrX" eventType="touchUpInside" id="BaL-qP-N9n"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2r-KZ-BfB">
+                                <rect key="frame" x="20" y="94" width="150" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="2QF-xH-2O8"/>
+                                    <constraint firstAttribute="height" constant="25" id="Ins-0g-qIW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.41176470590000003" green="0.1019607843" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sg3214@nyu.edu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgc-kN-NL3">
+                                <rect key="frame" x="20" y="121" width="189" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="VBF-Hp-bLz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.41176470590000003" green="0.1019607843" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Display Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpF-N6-Yje">
+                                <rect key="frame" x="20" y="193" width="133" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="133" id="EF2-Hb-sxB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.41176470590000003" green="0.1019607843" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQt-hC-t8h">
+                                <rect key="frame" x="20" y="283" width="108" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="108" id="eti-CU-0M4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.41176470590000003" green="0.1019607843" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Idr-tj-Q3R">
+                                <rect key="frame" x="20" y="222" width="189" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NOS-PY-RNG">
+                                <rect key="frame" x="20" y="312" width="189" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
-                        <color key="backgroundColor" red="0.50259374999999995" green="0.50259374999999995" blue="0.50259374999999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.89124999630000001" green="0.89229902210000001" blue="0.90830701459999996" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="hAa-4T-JLQ" firstAttribute="top" secondItem="3sb-eF-Va6" secondAttribute="bottom" constant="20" id="0mH-nL-2MR"/>
+                            <constraint firstItem="zpF-N6-Yje" firstAttribute="leading" secondItem="Idr-tj-Q3R" secondAttribute="leading" id="1YY-H8-ZtZ"/>
+                            <constraint firstItem="sgc-kN-NL3" firstAttribute="trailing" secondItem="Idr-tj-Q3R" secondAttribute="trailing" id="5Qw-pv-Taq"/>
                             <constraint firstItem="eeZ-b6-JMo" firstAttribute="leading" secondItem="sGM-8J-Qh6" secondAttribute="leadingMargin" constant="8" id="5mw-ou-6gp"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ImT-Jf-pJ0" secondAttribute="trailing" constant="8" id="7hU-56-Xac"/>
-                            <constraint firstItem="ImT-Jf-pJ0" firstAttribute="leading" secondItem="sGM-8J-Qh6" secondAttribute="leadingMargin" constant="8" id="DfD-oi-Jx4"/>
-                            <constraint firstItem="ImT-Jf-pJ0" firstAttribute="top" secondItem="pFZ-R9-EEh" secondAttribute="bottom" constant="17" id="Ef9-Nf-cvB"/>
-                            <constraint firstItem="eeZ-b6-JMo" firstAttribute="top" secondItem="ImT-Jf-pJ0" secondAttribute="bottom" constant="25" id="VS1-Jj-de9"/>
-                            <constraint firstItem="ImT-Jf-pJ0" firstAttribute="width" secondItem="pFZ-R9-EEh" secondAttribute="width" id="aHt-8X-JFv"/>
-                            <constraint firstItem="pFZ-R9-EEh" firstAttribute="top" secondItem="3sb-eF-Va6" secondAttribute="bottom" constant="36" id="bQL-Tb-OKf"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="pFZ-R9-EEh" secondAttribute="trailing" constant="8" id="g7G-it-fLm"/>
-                            <constraint firstItem="pFZ-R9-EEh" firstAttribute="leading" secondItem="sGM-8J-Qh6" secondAttribute="leadingMargin" constant="8" id="gN7-Rs-RMI"/>
+                            <constraint firstItem="X2r-KZ-BfB" firstAttribute="leading" secondItem="sGM-8J-Qh6" secondAttribute="leadingMargin" constant="4" id="7FI-4g-M5x"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hAa-4T-JLQ" secondAttribute="trailing" constant="-6" id="Cb8-3a-8vn"/>
+                            <constraint firstItem="hAa-4T-JLQ" firstAttribute="trailing" secondItem="r3d-BN-2ET" secondAttribute="trailing" id="HQe-Og-4tH"/>
+                            <constraint firstItem="Idr-tj-Q3R" firstAttribute="trailing" secondItem="NOS-PY-RNG" secondAttribute="trailing" id="Hcp-La-k7x"/>
+                            <constraint firstItem="X2r-KZ-BfB" firstAttribute="leading" secondItem="sgc-kN-NL3" secondAttribute="leading" id="JSw-Gc-TqL"/>
+                            <constraint firstItem="YQt-hC-t8h" firstAttribute="leading" secondItem="NOS-PY-RNG" secondAttribute="leading" id="NuU-B0-bAQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sgc-kN-NL3" secondAttribute="trailing" constant="95" id="T40-ro-uA6"/>
+                            <constraint firstItem="YQt-hC-t8h" firstAttribute="top" secondItem="r3d-BN-2ET" secondAttribute="bottom" constant="24" id="TKM-Zb-BvP"/>
+                            <constraint firstItem="r3d-BN-2ET" firstAttribute="leading" secondItem="uMW-fD-bhR" secondAttribute="leading" id="Tsg-j2-2IJ"/>
+                            <constraint firstItem="NOS-PY-RNG" firstAttribute="top" secondItem="YQt-hC-t8h" secondAttribute="bottom" constant="8" symbolic="YES" id="UFf-D4-u3m"/>
+                            <constraint firstItem="hAa-4T-JLQ" firstAttribute="leading" secondItem="sGM-8J-Qh6" secondAttribute="leadingMargin" constant="-8" id="Ubq-TR-XqP"/>
+                            <constraint firstItem="r3d-BN-2ET" firstAttribute="trailing" secondItem="uMW-fD-bhR" secondAttribute="trailing" id="UzM-PH-e2y"/>
+                            <constraint firstItem="r3d-BN-2ET" firstAttribute="top" secondItem="hAa-4T-JLQ" secondAttribute="bottom" constant="24" id="YZg-Op-tgy"/>
+                            <constraint firstItem="Idr-tj-Q3R" firstAttribute="top" secondItem="zpF-N6-Yje" secondAttribute="bottom" constant="8" symbolic="YES" id="aHu-S6-LgJ"/>
+                            <constraint firstAttribute="bottom" secondItem="uMW-fD-bhR" secondAttribute="bottom" constant="212" id="cSa-BV-Pt3"/>
+                            <constraint firstItem="zpF-N6-Yje" firstAttribute="top" secondItem="hAa-4T-JLQ" secondAttribute="bottom" constant="39" id="eTG-on-yPJ"/>
+                            <constraint firstItem="r3d-BN-2ET" firstAttribute="top" secondItem="sgc-kN-NL3" secondAttribute="bottom" constant="34" id="fD2-ky-ErT"/>
+                            <constraint firstItem="uMW-fD-bhR" firstAttribute="top" secondItem="r3d-BN-2ET" secondAttribute="bottom" constant="8" symbolic="YES" id="gGa-xy-W4i"/>
+                            <constraint firstItem="sgc-kN-NL3" firstAttribute="leading" secondItem="zpF-N6-Yje" secondAttribute="leading" id="k7k-ai-Kfh"/>
+                            <constraint firstItem="Idr-tj-Q3R" firstAttribute="leading" secondItem="YQt-hC-t8h" secondAttribute="leading" id="la1-wr-zew"/>
+                            <constraint firstItem="sgc-kN-NL3" firstAttribute="top" secondItem="X2r-KZ-BfB" secondAttribute="bottom" constant="2" id="llI-6d-XLS"/>
+                            <constraint firstItem="hAa-4T-JLQ" firstAttribute="leading" secondItem="r3d-BN-2ET" secondAttribute="leading" id="nhU-S9-vq4"/>
+                            <constraint firstItem="X2r-KZ-BfB" firstAttribute="top" secondItem="3sb-eF-Va6" secondAttribute="bottom" constant="30" id="pwv-t0-7KG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="eeZ-b6-JMo" secondAttribute="trailing" constant="8" id="tEh-81-so2"/>
+                            <constraint firstItem="sqE-uc-snG" firstAttribute="top" secondItem="eeZ-b6-JMo" secondAttribute="bottom" constant="20" id="uXY-Lr-AWy"/>
+                            <constraint firstItem="uMW-fD-bhR" firstAttribute="top" secondItem="Idr-tj-Q3R" secondAttribute="bottom" constant="15" id="wZE-B1-fbp"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3S8-Vr-LDC">
@@ -655,19 +717,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GHT-4v-36j">
-                                <rect key="frame" x="16" y="30" width="210" height="68"/>
+                                <rect key="frame" x="16" y="80" width="203" height="68"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="KCb-Tg-cTZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="210" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="203" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Begin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yH8-4S-xP8" customClass="materialLabel" customModule="DibnerLibraryApp" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="49" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="47" height="30"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" red="0.47843137250000001" green="0.1176470588" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cp4-H5-n9z" customClass="materialButton" customModule="DibnerLibraryApp" customModuleProvider="target">
-                                                <rect key="frame" x="54" y="0.0" width="48.5" height="30"/>
+                                                <rect key="frame" x="52" y="0.0" width="47" height="30"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                 <state key="normal" title="Day">
@@ -678,7 +740,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCX-nt-I3F" customClass="materialButton" customModule="DibnerLibraryApp" customModuleProvider="target">
-                                                <rect key="frame" x="107" y="0.0" width="49" height="30"/>
+                                                <rect key="frame" x="104" y="0.0" width="47" height="30"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                 <state key="normal" title="Hour">
@@ -689,7 +751,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3R4-cJ-M0o" customClass="materialButton" customModule="DibnerLibraryApp" customModuleProvider="target">
-                                                <rect key="frame" x="161" y="0.0" width="48.5" height="30"/>
+                                                <rect key="frame" x="156" y="0.0" width="47" height="30"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                 <state key="normal" title="Minute">
@@ -702,16 +764,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="P7o-Zi-f8g">
-                                        <rect key="frame" x="0.0" y="38" width="210" height="30"/>
+                                        <rect key="frame" x="0.0" y="38" width="203" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlV-pj-3qg" customClass="materialLabel" customModule="DibnerLibraryApp" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="49" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="47" height="30"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" red="0.47843137250000001" green="0.1176470588" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i5v-C5-81k" customClass="materialButton" customModule="DibnerLibraryApp" customModuleProvider="target">
-                                                <rect key="frame" x="54" y="0.0" width="48.5" height="30"/>
+                                                <rect key="frame" x="52" y="0.0" width="47" height="30"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="57" id="19o-oc-wTg"/>
@@ -730,7 +792,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AgQ-5l-es6" customClass="materialButton" customModule="DibnerLibraryApp" customModuleProvider="target">
-                                                <rect key="frame" x="107" y="0.0" width="49" height="30"/>
+                                                <rect key="frame" x="104" y="0.0" width="47" height="30"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                 <state key="normal" title="Hour">
@@ -741,7 +803,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CjM-X1-AW5" customClass="materialButton" customModule="DibnerLibraryApp" customModuleProvider="target">
-                                                <rect key="frame" x="161" y="0.0" width="48.5" height="30"/>
+                                                <rect key="frame" x="156" y="0.0" width="47" height="30"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                 <state key="normal" title="Minute">
@@ -756,10 +818,10 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="srq-LW-8kk">
-                                <rect key="frame" x="16" y="366" width="288" height="70"/>
+                                <rect key="frame" x="16" y="366" width="292" height="70"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HkV-if-mbp" customClass="materialButton" customModule="DibnerLibraryApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="292" height="30"/>
                                         <color key="backgroundColor" red="0.47843137250000001" green="0.1176470588" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Add">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -769,7 +831,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vqu-j1-Fie" customClass="materialButton" customModule="DibnerLibraryApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="40" width="288" height="30"/>
+                                        <rect key="frame" x="0.0" y="40" width="292" height="30"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Cancel">
                                             <color key="titleColor" red="0.47843137250000001" green="0.1176470588" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -780,25 +842,19 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Room Number or Laptop Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jax-rw-Wa5" customClass="materialTextFeild" customModule="DibnerLibraryApp" customModuleProvider="target">
-                                <rect key="frame" x="16" y="116" width="288" height="30"/>
-                                <color key="textColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="myj-7Y-ShG">
-                                <rect key="frame" x="16" y="154" width="288" height="194"/>
+                                <rect key="frame" x="16" y="206" width="288" height="142"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RoomCell" id="yTv-SH-tUt" customClass="RoomCell" customModule="DibnerLibraryApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="288" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yTv-SH-tUt" id="FjA-5h-jIf">
-                                            <rect key="frame" x="0.0" y="0.0" width="288" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="288" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tSZ-mO-q4m" customClass="materialLabel" customModule="DibnerLibraryApp" customModuleProvider="target">
-                                                    <rect key="frame" x="8" y="8" width="272" height="27.5"/>
+                                                    <rect key="frame" x="8" y="8" width="272" height="28"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                     <color key="textColor" red="0.41176470590000003" green="0.1019607843" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -818,11 +874,8 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBn-TM-nKR" customClass="materialButton" customModule="DibnerLibraryApp" customModuleProvider="target">
-                                <rect key="frame" x="234" y="30" width="70" height="68"/>
+                                <rect key="frame" x="234" y="80" width="70" height="68"/>
                                 <color key="backgroundColor" red="0.47843137250000001" green="0.1176470588" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="Opy-RD-zfA"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" title="Check">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -831,33 +884,72 @@
                                     <action selector="onCheckBtnPressed:" destination="Iug-Ys-gT6" eventType="touchUpInside" id="T07-Gy-oVF"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Room Number or Laptop Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jax-rw-Wa5" customClass="materialTextFeild" customModule="DibnerLibraryApp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="168" width="288" height="30"/>
+                                <color key="textColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1PY-c0-gkv" customClass="materialLabel" customModule="DibnerLibraryApp" customModuleProvider="target">
+                                <rect key="frame" x="70" y="42" width="49" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="aXY-dy-yhx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.47843137250000001" green="0.1176470588" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6R-r7-KjO" customClass="materialLabel" customModule="DibnerLibraryApp" customModuleProvider="target">
+                                <rect key="frame" x="124" y="42" width="49" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="jyj-KF-aNH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.47843137250000001" green="0.1176470588" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZb-Ww-PbO" customClass="materialLabel" customModule="DibnerLibraryApp" customModuleProvider="target">
+                                <rect key="frame" x="178" y="42" width="49" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.47843137250000001" green="0.1176470588" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="iyg-GS-4Fb" firstAttribute="top" secondItem="srq-LW-8kk" secondAttribute="bottom" constant="24" id="1L3-fi-Mi6"/>
-                            <constraint firstItem="myj-7Y-ShG" firstAttribute="trailing" secondItem="zlf-4i-2IM" secondAttribute="trailingMargin" id="4Kc-VL-Rqd"/>
-                            <constraint firstItem="srq-LW-8kk" firstAttribute="trailing" secondItem="zlf-4i-2IM" secondAttribute="trailingMargin" id="89T-yr-C3r"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="OBn-TM-nKR" secondAttribute="trailing" id="8le-1B-0CP"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="jax-rw-Wa5" secondAttribute="trailing" id="9OJ-HF-a68"/>
-                            <constraint firstItem="OBn-TM-nKR" firstAttribute="top" secondItem="hAo-NX-Vm2" secondAttribute="bottom" constant="30" id="Bq1-6W-MtC"/>
-                            <constraint firstItem="myj-7Y-ShG" firstAttribute="centerX" secondItem="zlf-4i-2IM" secondAttribute="centerX" id="Cev-gg-rYY"/>
-                            <constraint firstItem="OBn-TM-nKR" firstAttribute="leading" secondItem="GHT-4v-36j" secondAttribute="trailing" constant="8" id="Ftw-2i-EaV"/>
-                            <constraint firstItem="srq-LW-8kk" firstAttribute="leading" secondItem="zlf-4i-2IM" secondAttribute="leadingMargin" id="ORP-QO-FhC"/>
-                            <constraint firstItem="GHT-4v-36j" firstAttribute="leading" secondItem="zlf-4i-2IM" secondAttribute="leadingMargin" id="S8A-b0-guN"/>
-                            <constraint firstItem="srq-LW-8kk" firstAttribute="top" secondItem="myj-7Y-ShG" secondAttribute="bottom" constant="18" id="SKn-nw-irC"/>
-                            <constraint firstItem="myj-7Y-ShG" firstAttribute="leading" secondItem="zlf-4i-2IM" secondAttribute="leadingMargin" id="TLe-0n-eJ2"/>
-                            <constraint firstItem="GHT-4v-36j" firstAttribute="top" secondItem="hAo-NX-Vm2" secondAttribute="bottom" constant="30" id="Ycs-fx-6h4"/>
-                            <constraint firstItem="myj-7Y-ShG" firstAttribute="top" secondItem="jax-rw-Wa5" secondAttribute="bottom" constant="8" id="YtX-sE-MCF"/>
-                            <constraint firstItem="jax-rw-Wa5" firstAttribute="leading" secondItem="zlf-4i-2IM" secondAttribute="leadingMargin" id="eRt-Dm-jfG"/>
-                            <constraint firstItem="srq-LW-8kk" firstAttribute="leading" secondItem="zlf-4i-2IM" secondAttribute="leadingMargin" id="hOy-aF-f2U"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="srq-LW-8kk" secondAttribute="trailing" id="lQG-51-soO"/>
+                            <constraint firstItem="myj-7Y-ShG" firstAttribute="leading" secondItem="srq-LW-8kk" secondAttribute="leading" id="9gZ-hF-UsF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="srq-LW-8kk" secondAttribute="trailing" constant="-4" id="GfR-48-OTt"/>
+                            <constraint firstItem="m6R-r7-KjO" firstAttribute="baseline" secondItem="PZb-Ww-PbO" secondAttribute="baseline" id="Hej-Pg-4T3"/>
+                            <constraint firstItem="myj-7Y-ShG" firstAttribute="top" secondItem="jax-rw-Wa5" secondAttribute="bottom" constant="8" symbolic="YES" id="JKJ-rU-zZt"/>
+                            <constraint firstItem="OBn-TM-nKR" firstAttribute="leading" secondItem="GHT-4v-36j" secondAttribute="trailing" constant="15" id="JSn-5F-2yI"/>
+                            <constraint firstItem="iyg-GS-4Fb" firstAttribute="top" secondItem="srq-LW-8kk" secondAttribute="bottom" constant="24" id="KfQ-3v-q7y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PZb-Ww-PbO" secondAttribute="trailing" constant="77" id="MJb-BE-WaO"/>
+                            <constraint firstItem="jax-rw-Wa5" firstAttribute="top" secondItem="GHT-4v-36j" secondAttribute="bottom" constant="20" id="Nus-fC-17l"/>
+                            <constraint firstItem="srq-LW-8kk" firstAttribute="leading" secondItem="zlf-4i-2IM" secondAttribute="leadingMargin" constant="-4" id="OgE-Ln-wq3"/>
+                            <constraint firstItem="1PY-c0-gkv" firstAttribute="leading" secondItem="zlf-4i-2IM" secondAttribute="leadingMargin" constant="54" id="Wts-BX-Pkh"/>
+                            <constraint firstItem="jax-rw-Wa5" firstAttribute="trailing" secondItem="myj-7Y-ShG" secondAttribute="trailing" id="ZFN-yf-OvL"/>
+                            <constraint firstItem="GHT-4v-36j" firstAttribute="leading" secondItem="jax-rw-Wa5" secondAttribute="leading" id="eSI-hY-FtS"/>
+                            <constraint firstItem="GHT-4v-36j" firstAttribute="top" secondItem="OBn-TM-nKR" secondAttribute="top" id="efr-aO-PcW"/>
+                            <constraint firstItem="srq-LW-8kk" firstAttribute="top" secondItem="myj-7Y-ShG" secondAttribute="bottom" constant="18" id="f6j-CZ-hB0"/>
+                            <constraint firstItem="1PY-c0-gkv" firstAttribute="baseline" secondItem="m6R-r7-KjO" secondAttribute="baseline" id="gb4-dB-eBl"/>
+                            <constraint firstItem="m6R-r7-KjO" firstAttribute="leading" secondItem="1PY-c0-gkv" secondAttribute="trailing" constant="5" id="i2l-lO-8SV"/>
+                            <constraint firstItem="OBn-TM-nKR" firstAttribute="trailing" secondItem="zlf-4i-2IM" secondAttribute="trailingMargin" id="ikJ-DW-nfa"/>
+                            <constraint firstItem="1PY-c0-gkv" firstAttribute="firstBaseline" secondItem="m6R-r7-KjO" secondAttribute="firstBaseline" id="jVp-jH-CRq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="GHT-4v-36j" secondAttribute="trailing" id="nre-I6-MjZ"/>
-                            <constraint firstItem="jax-rw-Wa5" firstAttribute="top" secondItem="OBn-TM-nKR" secondAttribute="bottom" constant="18" id="p3U-XS-pqj"/>
-                            <constraint firstItem="jax-rw-Wa5" firstAttribute="top" secondItem="GHT-4v-36j" secondAttribute="bottom" constant="18" id="pu6-ZG-ihN"/>
+                            <constraint firstItem="m6R-r7-KjO" firstAttribute="firstBaseline" secondItem="PZb-Ww-PbO" secondAttribute="firstBaseline" id="nyf-ch-eOk"/>
+                            <constraint firstItem="GHT-4v-36j" firstAttribute="top" secondItem="1PY-c0-gkv" secondAttribute="bottom" constant="8" symbolic="YES" id="nyu-bn-F2g"/>
+                            <constraint firstItem="GHT-4v-36j" firstAttribute="bottom" secondItem="OBn-TM-nKR" secondAttribute="bottom" id="pOc-db-Thy"/>
+                            <constraint firstItem="OBn-TM-nKR" firstAttribute="top" secondItem="hAo-NX-Vm2" secondAttribute="bottom" constant="80" id="tdJ-1M-NSd"/>
+                            <constraint firstItem="OBn-TM-nKR" firstAttribute="trailing" secondItem="jax-rw-Wa5" secondAttribute="trailing" id="tnc-Rb-WcZ"/>
+                            <constraint firstItem="1PY-c0-gkv" firstAttribute="top" secondItem="hAo-NX-Vm2" secondAttribute="bottom" constant="42" id="tpL-S9-hoO"/>
+                            <constraint firstItem="GHT-4v-36j" firstAttribute="leading" secondItem="zlf-4i-2IM" secondAttribute="leadingMargin" id="uzA-7J-vFd"/>
+                            <constraint firstItem="PZb-Ww-PbO" firstAttribute="leading" secondItem="m6R-r7-KjO" secondAttribute="trailing" constant="5" id="z0s-NR-eWy"/>
+                            <constraint firstItem="jax-rw-Wa5" firstAttribute="leading" secondItem="myj-7Y-ShG" secondAttribute="leading" id="zqb-SC-8Ry"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="nre-I6-MjZ"/>
+                                <exclude reference="OgE-Ln-wq3"/>
                             </mask>
                         </variation>
                     </view>
@@ -1334,25 +1426,39 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jb8-Sk-2wP" customClass="materialView" customModule="DibnerLibraryApp" customModuleProvider="target">
                                 <rect key="frame" x="6" y="72" width="309" height="488"/>
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map2lines" translatesAutoresizingMaskIntoConstraints="NO" id="sOY-az-fl5">
+                                        <rect key="frame" x="0.0" y="0.0" width="309" height="488"/>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Room Status (4th Floor)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEu-ob-pw5" customClass="materialLabel" customModule="DibnerLibraryApp" customModuleProvider="target">
-                                        <rect key="frame" x="8" y="8" width="192.5" height="20.5"/>
+                                        <rect key="frame" x="8" y="8" width="193" height="21"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                         <color key="textColor" red="0.41176470590000003" green="0.1019607843" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uK5-ba-0Kv" customClass="materialButton" customModule="DibnerLibraryApp" customModuleProvider="target">
-                                        <rect key="frame" x="8" y="132" width="31" height="33"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPH-be-LAe" customClass="materialButton" customModule="DibnerLibraryApp" customModuleProvider="target">
+                                        <rect key="frame" x="13" y="266" width="31" height="33"/>
                                         <color key="backgroundColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                        <state key="normal" title="432">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uK5-ba-0Kv" customClass="materialButton" customModule="DibnerLibraryApp" customModuleProvider="target">
+                                        <rect key="frame" x="13" y="216" width="31" height="33"/>
+                                        <color key="backgroundColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="31" id="x1t-ZV-ZVI"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                         <state key="normal" title="434">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                     </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="7dP-lB-lcL">
-                                        <rect key="frame" x="54" y="81" width="247" height="33"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="7dP-lB-lcL">
+                                        <rect key="frame" x="60" y="85" width="229" height="33"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7a-YN-Pot" customClass="materialButton" customModule="DibnerLibraryApp" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="32" height="33"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="33" height="33"/>
                                                 <color key="backgroundColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                                 <state key="normal" title="445">
@@ -1360,7 +1466,7 @@
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P57-V6-O0H" customClass="materialButton" customModule="DibnerLibraryApp" customModuleProvider="target">
-                                                <rect key="frame" x="41" y="0.0" width="44" height="33"/>
+                                                <rect key="frame" x="36" y="0.0" width="45" height="33"/>
                                                 <color key="backgroundColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                                 <state key="normal" title="445A">
@@ -1368,7 +1474,7 @@
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UpT-rm-E3C" customClass="materialButton" customModule="DibnerLibraryApp" customModuleProvider="target">
-                                                <rect key="frame" x="94" y="0.0" width="45" height="33"/>
+                                                <rect key="frame" x="84" y="0.0" width="45.5" height="33"/>
                                                 <color key="backgroundColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                                 <state key="normal" title="445B">
@@ -1376,7 +1482,7 @@
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mzi-7e-piF" customClass="materialButton" customModule="DibnerLibraryApp" customModuleProvider="target">
-                                                <rect key="frame" x="147" y="0.0" width="46" height="33"/>
+                                                <rect key="frame" x="132.5" y="0.0" width="47" height="33"/>
                                                 <color key="backgroundColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                                 <state key="normal" title="445C">
@@ -1384,7 +1490,7 @@
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NM7-8A-w6Y" customClass="materialButton" customModule="DibnerLibraryApp" customModuleProvider="target">
-                                                <rect key="frame" x="202" y="0.0" width="46" height="33"/>
+                                                <rect key="frame" x="182.5" y="0.0" width="46.5" height="33"/>
                                                 <color key="backgroundColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                                 <state key="normal" title="445D">
@@ -1396,45 +1502,71 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upstair" translatesAutoresizingMaskIntoConstraints="NO" id="vGW-1H-8uZ">
                                         <rect key="frame" x="54" y="415" width="40" height="39"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="2qr-Jx-cBk"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="39" id="Kgj-Tk-h4C"/>
-                                            <constraint firstAttribute="width" constant="40" id="ceq-pQ-dGf"/>
-                                            <constraint firstAttribute="height" constant="39" id="s53-nN-6Yt"/>
+                                            <constraint firstAttribute="height" constant="39" id="1cY-tU-nEO"/>
+                                            <constraint firstAttribute="width" constant="40" id="wms-1b-jd3"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bathroom" translatesAutoresizingMaskIntoConstraints="NO" id="Ngl-kn-zfe">
-                                        <rect key="frame" x="8" y="75" width="40" height="39"/>
+                                        <rect key="frame" x="8" y="132" width="40" height="39"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="39" id="LYa-jb-5tM"/>
-                                            <constraint firstAttribute="height" constant="39" id="jt1-H7-NzL"/>
-                                            <constraint firstAttribute="width" constant="40" id="lnU-JM-sSi"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="nCx-ZL-La7"/>
+                                            <constraint firstAttribute="height" constant="39" id="wkf-M2-z5M"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPH-be-LAe" customClass="materialButton" customModule="DibnerLibraryApp" customModuleProvider="target">
-                                        <rect key="frame" x="8" y="184" width="31" height="33"/>
-                                        <color key="backgroundColor" red="0.69114434120000001" green="0.69195783710000003" blue="0.70437167550000002" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                        <state key="normal" title="432">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shelf" translatesAutoresizingMaskIntoConstraints="NO" id="OIv-V6-AOj">
+                                        <rect key="frame" x="124" y="201" width="85" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="85" id="C2i-Ip-XGi"/>
+                                            <constraint firstAttribute="height" constant="35" id="jeQ-RY-P7f"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shelf" translatesAutoresizingMaskIntoConstraints="NO" id="dsz-J0-RmH">
+                                        <rect key="frame" x="124" y="266" width="85" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="kBl-9f-OfA"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shelf" translatesAutoresizingMaskIntoConstraints="NO" id="lPH-yB-Mfe">
+                                        <rect key="frame" x="202" y="266" width="85" height="35"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shelf" translatesAutoresizingMaskIntoConstraints="NO" id="lZf-mH-yFn">
+                                        <rect key="frame" x="202" y="201" width="85" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="85" id="TSo-ji-sGj"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="7dP-lB-lcL" secondAttribute="trailing" constant="8" id="2Sm-BU-1I1"/>
-                                    <constraint firstItem="vGW-1H-8uZ" firstAttribute="leading" secondItem="Jb8-Sk-2wP" secondAttribute="leading" constant="54" id="7ji-2D-8dd"/>
-                                    <constraint firstItem="aEu-ob-pw5" firstAttribute="leading" secondItem="Jb8-Sk-2wP" secondAttribute="leading" constant="8" id="EZJ-n6-qI5"/>
-                                    <constraint firstItem="uK5-ba-0Kv" firstAttribute="leading" secondItem="Jb8-Sk-2wP" secondAttribute="leading" constant="8" id="Enz-cs-ecC"/>
-                                    <constraint firstItem="7dP-lB-lcL" firstAttribute="leading" secondItem="Jb8-Sk-2wP" secondAttribute="leading" constant="54" id="GXa-WX-N0W"/>
-                                    <constraint firstItem="LPH-be-LAe" firstAttribute="top" secondItem="uK5-ba-0Kv" secondAttribute="bottom" constant="19" id="Gld-06-yxS"/>
-                                    <constraint firstItem="aEu-ob-pw5" firstAttribute="top" secondItem="Jb8-Sk-2wP" secondAttribute="top" constant="8" id="KEj-vJ-R3e"/>
-                                    <constraint firstItem="LPH-be-LAe" firstAttribute="leading" secondItem="Jb8-Sk-2wP" secondAttribute="leading" constant="8" id="Yc2-iF-kHv"/>
-                                    <constraint firstAttribute="bottom" secondItem="vGW-1H-8uZ" secondAttribute="bottom" constant="34" id="lyd-0r-IjY"/>
-                                    <constraint firstItem="uK5-ba-0Kv" firstAttribute="top" secondItem="aEu-ob-pw5" secondAttribute="bottom" constant="103.5" id="mYp-TY-rM9"/>
-                                    <constraint firstItem="Ngl-kn-zfe" firstAttribute="leading" secondItem="Jb8-Sk-2wP" secondAttribute="leading" constant="8" id="mtF-Uq-gYG"/>
-                                    <constraint firstItem="Ngl-kn-zfe" firstAttribute="top" secondItem="aEu-ob-pw5" secondAttribute="bottom" constant="46.5" id="phw-FP-ii8"/>
-                                    <constraint firstItem="7dP-lB-lcL" firstAttribute="top" secondItem="aEu-ob-pw5" secondAttribute="bottom" constant="52.5" id="wdt-4l-aae"/>
+                                    <constraint firstItem="vGW-1H-8uZ" firstAttribute="leading" secondItem="Jb8-Sk-2wP" secondAttribute="leading" constant="54" id="1oT-Qw-6ay"/>
+                                    <constraint firstItem="OIv-V6-AOj" firstAttribute="leading" secondItem="uK5-ba-0Kv" secondAttribute="trailing" constant="80" id="2Hs-AN-X9T"/>
+                                    <constraint firstItem="aEu-ob-pw5" firstAttribute="top" secondItem="Jb8-Sk-2wP" secondAttribute="topMargin" id="2f1-fF-xjf"/>
+                                    <constraint firstItem="lZf-mH-yFn" firstAttribute="leading" secondItem="lPH-yB-Mfe" secondAttribute="leading" id="3Ns-pr-zVe"/>
+                                    <constraint firstAttribute="trailing" secondItem="sOY-az-fl5" secondAttribute="trailing" id="4hR-0B-4GT"/>
+                                    <constraint firstItem="dsz-J0-RmH" firstAttribute="top" secondItem="lZf-mH-yFn" secondAttribute="bottom" constant="30" id="6B3-lT-S5h"/>
+                                    <constraint firstItem="OIv-V6-AOj" firstAttribute="trailing" secondItem="dsz-J0-RmH" secondAttribute="trailing" id="6dg-0h-spx"/>
+                                    <constraint firstItem="uK5-ba-0Kv" firstAttribute="top" secondItem="Ngl-kn-zfe" secondAttribute="bottom" constant="45" id="BR5-Nb-TP5"/>
+                                    <constraint firstAttribute="bottom" secondItem="sOY-az-fl5" secondAttribute="bottom" id="FtX-0T-EHe"/>
+                                    <constraint firstItem="OIv-V6-AOj" firstAttribute="bottom" secondItem="lZf-mH-yFn" secondAttribute="bottom" id="HHR-Ej-e6y"/>
+                                    <constraint firstItem="aEu-ob-pw5" firstAttribute="leading" secondItem="Jb8-Sk-2wP" secondAttribute="leadingMargin" id="Jrn-tc-R0x"/>
+                                    <constraint firstAttribute="trailing" secondItem="7dP-lB-lcL" secondAttribute="trailing" constant="20" id="KBM-p3-hMX"/>
+                                    <constraint firstItem="LPH-be-LAe" firstAttribute="top" secondItem="uK5-ba-0Kv" secondAttribute="bottom" constant="17" id="LqP-0z-8CL"/>
+                                    <constraint firstItem="OIv-V6-AOj" firstAttribute="top" secondItem="lZf-mH-yFn" secondAttribute="top" id="O0A-zh-rUf"/>
+                                    <constraint firstItem="7dP-lB-lcL" firstAttribute="top" secondItem="aEu-ob-pw5" secondAttribute="bottom" constant="56" id="Phj-6h-ehn"/>
+                                    <constraint firstItem="OIv-V6-AOj" firstAttribute="top" secondItem="7dP-lB-lcL" secondAttribute="bottom" constant="83" id="Qb1-VR-bo4"/>
+                                    <constraint firstItem="uK5-ba-0Kv" firstAttribute="leading" secondItem="LPH-be-LAe" secondAttribute="leading" id="RzQ-yk-4tb"/>
+                                    <constraint firstItem="OIv-V6-AOj" firstAttribute="leading" secondItem="dsz-J0-RmH" secondAttribute="leading" id="TxK-qy-4m6"/>
+                                    <constraint firstItem="sOY-az-fl5" firstAttribute="top" secondItem="Jb8-Sk-2wP" secondAttribute="top" id="Ukv-TV-6bP"/>
+                                    <constraint firstItem="LPH-be-LAe" firstAttribute="top" secondItem="dsz-J0-RmH" secondAttribute="top" id="XH7-pU-DLa"/>
+                                    <constraint firstAttribute="trailing" secondItem="lZf-mH-yFn" secondAttribute="trailing" constant="22" id="aTK-c3-xT9"/>
+                                    <constraint firstItem="lZf-mH-yFn" firstAttribute="trailing" secondItem="lPH-yB-Mfe" secondAttribute="trailing" id="eh2-nq-Upl"/>
+                                    <constraint firstItem="sOY-az-fl5" firstAttribute="leading" secondItem="Jb8-Sk-2wP" secondAttribute="leading" id="gH5-gF-aJy"/>
+                                    <constraint firstItem="aEu-ob-pw5" firstAttribute="leading" secondItem="Ngl-kn-zfe" secondAttribute="leading" id="huy-a1-6hW"/>
+                                    <constraint firstItem="dsz-J0-RmH" firstAttribute="top" secondItem="lPH-yB-Mfe" secondAttribute="top" id="iCk-ik-39X"/>
+                                    <constraint firstItem="7dP-lB-lcL" firstAttribute="leading" secondItem="Jb8-Sk-2wP" secondAttribute="leading" constant="60" id="k11-dA-XT3"/>
+                                    <constraint firstItem="Ngl-kn-zfe" firstAttribute="centerX" secondItem="uK5-ba-0Kv" secondAttribute="centerX" id="ouC-lS-ssg"/>
+                                    <constraint firstAttribute="bottom" secondItem="vGW-1H-8uZ" secondAttribute="bottom" constant="34" id="vU8-AB-tya"/>
+                                    <constraint firstItem="dsz-J0-RmH" firstAttribute="bottom" secondItem="lPH-yB-Mfe" secondAttribute="bottom" id="wS5-lB-dj4"/>
+                                    <constraint firstItem="uK5-ba-0Kv" firstAttribute="leading" secondItem="Jb8-Sk-2wP" secondAttribute="leading" constant="13" id="yQA-AQ-clr"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -1595,10 +1727,12 @@
         <image name="cancel" width="128" height="128"/>
         <image name="exit" width="128" height="128"/>
         <image name="loginbg" width="2448" height="3264"/>
+        <image name="map2lines" width="610" height="982"/>
         <image name="maplines" width="620" height="782"/>
         <image name="menu" width="22" height="22"/>
         <image name="number" width="128" height="128"/>
         <image name="printer" width="128" height="128"/>
+        <image name="shelf" width="128" height="128"/>
         <image name="time" width="128" height="128"/>
         <image name="upstair" width="128" height="128"/>
     </resources>
