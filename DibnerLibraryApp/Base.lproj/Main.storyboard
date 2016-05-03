@@ -1293,21 +1293,26 @@
             </objects>
             <point key="canvasLocation" x="1511" y="1297"/>
         </scene>
-        <!--View Controller-->
+        <!--ChatroomVC-->
         <scene sceneID="aJe-SM-Ffr">
             <objects>
-                <viewController id="fN0-Eh-KqR" sceneMemberID="viewController">
+                <viewController id="fN0-Eh-KqR" customClass="ChatroomVC" customModule="DibnerLibraryApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="za3-DC-Ueg"/>
-                        <viewControllerLayoutGuide type="bottom" id="0mv-rw-ANl"/>
+                        <viewControllerLayoutGuide type="top" id="CSj-kq-J4O"/>
+                        <viewControllerLayoutGuide type="bottom" id="O4L-y9-ayv"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="y20-Tn-pld">
+                    <view key="view" contentMode="scaleToFill" id="bBM-rx-vLV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="jgI-sT-rRN"/>
+                    <navigationItem key="navigationItem" id="jgI-sT-rRN">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="zV3-gD-sMN"/>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="menuButton" destination="zV3-gD-sMN" id="fcA-C2-BIY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="naa-ao-e76" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

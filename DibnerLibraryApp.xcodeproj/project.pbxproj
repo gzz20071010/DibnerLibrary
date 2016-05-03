@@ -30,6 +30,7 @@
 		17E9A1D11CD7E21D00B22835 /* materialLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E9A1CD1CD7E21D00B22835 /* materialLabel.swift */; };
 		17E9A1D21CD7E21D00B22835 /* materialTextFeild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E9A1CE1CD7E21D00B22835 /* materialTextFeild.swift */; };
 		17E9A1D31CD7E21D00B22835 /* materialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E9A1CF1CD7E21D00B22835 /* materialView.swift */; };
+		17E9A1D51CD8825A00B22835 /* ChatroomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E9A1D41CD8825A00B22835 /* ChatroomVC.swift */; };
 		4F72FA3BB5BEBE63DB920A22 /* Pods_DibnerLibraryApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FABAE4284809D0D137A06B19 /* Pods_DibnerLibraryApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		17E9A1CD1CD7E21D00B22835 /* materialLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = materialLabel.swift; sourceTree = "<group>"; };
 		17E9A1CE1CD7E21D00B22835 /* materialTextFeild.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = materialTextFeild.swift; sourceTree = "<group>"; };
 		17E9A1CF1CD7E21D00B22835 /* materialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = materialView.swift; sourceTree = "<group>"; };
+		17E9A1D41CD8825A00B22835 /* ChatroomVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatroomVC.swift; sourceTree = "<group>"; };
 		4234F1B95E4FCF8917CE7787 /* Pods-DibnerLibraryApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DibnerLibraryApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-DibnerLibraryApp/Pods-DibnerLibraryApp.release.xcconfig"; sourceTree = "<group>"; };
 		ACC622349E50C40598E7DE49 /* Pods-DibnerLibraryApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DibnerLibraryApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DibnerLibraryApp/Pods-DibnerLibraryApp.debug.xcconfig"; sourceTree = "<group>"; };
 		FABAE4284809D0D137A06B19 /* Pods_DibnerLibraryApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DibnerLibraryApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,6 +151,7 @@
 				1798554F1C6DC8C400DD523F /* SideThreeVC.swift */,
 				179855551C6DD28500DD523F /* AddPlantVC.swift */,
 				179A8BFA1CA3117200A381C0 /* MapVC.swift */,
+				17E9A1D41CD8825A00B22835 /* ChatroomVC.swift */,
 				179855441C6DAA5D00DD523F /* SWRevealViewController */,
 			);
 			name = Controller;
@@ -315,6 +318,7 @@
 				1768619D1CB2F7BE006145EA /* reservationCell.swift in Sources */,
 				1798554E1C6DC8A300DD523F /* SideTwoVC.swift in Sources */,
 				179855561C6DD28500DD523F /* AddPlantVC.swift in Sources */,
+				17E9A1D51CD8825A00B22835 /* ChatroomVC.swift in Sources */,
 				179A8BFB1CA3117200A381C0 /* MapVC.swift in Sources */,
 				179855481C6DAA7A00DD523F /* SWRevealViewController.m in Sources */,
 				1798554C1C6DB38C00DD523F /* SideOneVC.swift in Sources */,
